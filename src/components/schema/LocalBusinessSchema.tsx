@@ -5,13 +5,13 @@
  * and https://validator.schema.org — re-validate after any content model change.
  */
 
-import { BUSINESS, CITIES } from "@/lib/config";
+import { BUSINESS, CITIES, SERVICES } from "@/lib/config";
 
 interface Props {
   pageUrl: string;
 }
 
-export function LocalBusinessSchema({ pageUrl }: Props) {
+export function LocalBusinessSchema({ pageUrl: _pageUrl }: Props) {
   const schema = {
     "@context": "https://schema.org",
     "@type": BUSINESS.schemaType,
@@ -19,10 +19,15 @@ export function LocalBusinessSchema({ pageUrl }: Props) {
     name: BUSINESS.name,
     legalName: BUSINESS.legalName,
     description:
-      "Force1 Restoration provides 24/7 emergency water damage restoration, mold remediation, storm damage restoration, and fire damage restoration throughout DeBary and Orange City, FL.",
+      "Force1 Restoration provides 24/7 emergency water damage restoration, mold remediation, storm damage restoration, and fire damage restoration throughout DeBary and Orange City, FL. IICRC Certified technicians respond in under an hour.",
     url: BUSINESS.siteUrl,
     telephone: BUSINESS.phone,
     email: BUSINESS.email,
+    logo: {
+      "@type": "ImageObject",
+      url: `${BUSINESS.siteUrl}/logo.svg`,
+    },
+    image: `${BUSINESS.siteUrl}/opengraph-image`,
     address: {
       "@type": "PostalAddress",
       streetAddress: BUSINESS.address.street,
@@ -36,24 +41,63 @@ export function LocalBusinessSchema({ pageUrl }: Props) {
       latitude: BUSINESS.geo.latitude,
       longitude: BUSINESS.geo.longitude,
     },
-    openingHoursSpecification: {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday",
-      ],
-      opens: "00:00",
-      closes: "23:59",
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: [
+          "Monday", "Tuesday", "Wednesday", "Thursday",
+          "Friday", "Saturday", "Sunday",
+        ],
+        opens: "00:00",
+        closes: "23:59",
+      },
+    ],
+    contactPoint: [
+      {
+        "@type": "ContactPoint",
+        telephone: BUSINESS.phone,
+        contactType: "emergency",
+        availableLanguage: "English",
+        hoursAvailable: {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: [
+            "Monday", "Tuesday", "Wednesday", "Thursday",
+            "Friday", "Saturday", "Sunday",
+          ],
+          opens: "00:00",
+          closes: "23:59",
+        },
+      },
+      {
+        "@type": "ContactPoint",
+        telephone: BUSINESS.phone,
+        contactType: "customer service",
+        availableLanguage: "English",
+      },
+    ],
+    areaServed: [
+      ...CITIES.map((city) => ({
+        "@type": "City",
+        name: `${city.name}, ${city.state}`,
+      })),
+      {
+        "@type": "AdministrativeArea",
+        name: "Volusia County, FL",
+      },
+    ],
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Restoration Services",
+      itemListElement: SERVICES.map((s) => ({
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: s.name,
+          description: s.shortDescription,
+          url: `${BUSINESS.siteUrl}/services/${s.slug}`,
+        },
+      })),
     },
-    areaServed: CITIES.map((city) => ({
-      "@type": "City",
-      name: `${city.name}, ${city.state}`,
-    })),
     sameAs: Object.values(BUSINESS.social).filter((u) => !u.startsWith("[")),
     hasCredential: BUSINESS.certifications.map((cert) => ({
       "@type": "EducationalOccupationalCredential",
@@ -64,11 +108,16 @@ export function LocalBusinessSchema({ pageUrl }: Props) {
       "Mold Remediation",
       "Storm Damage Restoration",
       "Fire Damage Restoration",
+      "IICRC S500 Standard",
+      "IICRC S520 Standard",
+      "IICRC S700 Standard",
+      "Insurance Claims Documentation",
+      "Structural Drying",
+      "Mold Containment",
     ],
     priceRange: "$$",
     currenciesAccepted: "USD",
     paymentAccepted: "Cash, Check, Credit Card, Insurance",
-    image: `${BUSINESS.siteUrl}/og-image.jpg`, /* REPLACE: real OG image URL */
   };
 
   return (

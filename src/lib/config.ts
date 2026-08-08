@@ -47,9 +47,9 @@ export const BUSINESS = {
     longitude: "-81.3135",
   },
 
-  /* Site — REPLACE domain and set NEXT_PUBLIC_SITE_URL in Vercel before launch */
-  domain: "force1restoration.com",    /* REPLACE: confirm real domain */
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://force1restoration.com",
+  /* Site — set NEXT_PUBLIC_SITE_URL=https://www.force1waterdamagefl.com in Vercel */
+  domain: "force1waterdamagefl.com",
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.force1waterdamagefl.com",
 
   /* Social / third-party profile URLs */
   social: {

@@ -14,45 +14,45 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const base = BUSINESS.siteUrl;
   const now = new Date().toISOString();
 
-  /* Core pages */
+  /* Core pages — contact/homepage rank highest for local lead gen */
   const corePages: MetadataRoute.Sitemap = [
-    { url: base, lastModified: now, changeFrequency: "weekly", priority: 1.0 },
-    { url: `${base}/about`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: base,               lastModified: now, changeFrequency: "weekly",  priority: 1.0 },
+    { url: `${base}/contact`,  lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${base}/services`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
-    { url: `${base}/locations`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
-    { url: `${base}/reviews`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/faq`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/blog`, lastModified: now, changeFrequency: "weekly", priority: 0.6 },
-    { url: `${base}/contact`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/locations`,lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/faq`,      lastModified: now, changeFrequency: "monthly", priority: 0.75 },
+    { url: `${base}/reviews`,  lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/about`,    lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/blog`,     lastModified: now, changeFrequency: "weekly",  priority: 0.6 },
   ];
 
-  /* Service pages */
+  /* Service pages — primary commercial targets */
   const servicePages: MetadataRoute.Sitemap = SERVICES.map((service) => ({
     url: `${base}/services/${service.slug}`,
     lastModified: now,
-    changeFrequency: "monthly",
+    changeFrequency: "monthly" as const,
     priority: 0.9,
   }));
 
-  /* City pages */
+  /* City pages — local SEO hub pages */
   const cityPages: MetadataRoute.Sitemap = CITIES.map((city) => ({
     url: `${base}/locations/${city.slug}`,
     lastModified: now,
-    changeFrequency: "monthly",
+    changeFrequency: "monthly" as const,
     priority: 0.9,
   }));
 
-  /* Service × city combo pages */
+  /* Service × city combo pages — highest-intent local landing pages */
   const comboPages: MetadataRoute.Sitemap = getAllCombos().map(
     ({ serviceSlug, citySlug }) => ({
       url: `${base}/services/${serviceSlug}/${citySlug}`,
       lastModified: now,
-      changeFrequency: "monthly",
+      changeFrequency: "monthly" as const,
       priority: 0.85,
     })
   );
 
-  /* Blog posts */
+  /* Blog posts — lower priority until real content is published */
   const blogPosts: MetadataRoute.Sitemap = [
     "what-to-do-after-water-damage",
     "signs-of-mold-in-florida-homes",
@@ -60,7 +60,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ].map((slug) => ({
     url: `${base}/blog/${slug}`,
     lastModified: now,
-    changeFrequency: "yearly",
+    changeFrequency: "yearly" as const,
     priority: 0.5,
   }));
 

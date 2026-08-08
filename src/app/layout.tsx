@@ -5,6 +5,7 @@ import { PhoneProvider } from "@/components/ui/PhoneNumber";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { LocalBusinessSchema } from "@/components/schema/LocalBusinessSchema";
+import { WebSiteSchema } from "@/components/schema/WebSiteSchema";
 import { BUSINESS } from "@/lib/config";
 
 const geistSans = Geist({
@@ -22,24 +23,44 @@ export const metadata: Metadata = {
   description:
     "Force1 Restoration provides 24/7 water damage restoration, mold remediation, storm damage restoration, and fire damage restoration in DeBary and Orange City, FL. IICRC Certified. Call (407) 956-9780.",
   metadataBase: new URL(BUSINESS.siteUrl),
+  alternates: { canonical: BUSINESS.siteUrl },
   icons: {
     icon: [
       { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
       { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
     ],
     apple: [{ url: "/apple-icon.png" }],
-    other: [
-      { rel: "mask-icon", url: "/favicon.ico" },
-    ],
+    other: [{ rel: "mask-icon", url: "/favicon.ico" }],
   },
   openGraph: {
     type: "website",
     locale: "en_US",
     siteName: BUSINESS.name,
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Force1 Restoration — 24/7 Water Damage, Mold, Storm & Fire Restoration in DeBary & Orange City, FL",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${BUSINESS.name} — 24/7 Restoration in DeBary & Orange City, FL`,
+    description:
+      "Force1 Restoration: IICRC-certified water damage, mold, storm & fire restoration in DeBary and Orange City, FL. 24/7 emergency response. Call (407) 956-9780.",
+    images: ["/opengraph-image"],
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
   /*
    * TODO: Replace [GTM_ID] and uncomment once GTM container ID is provided.
@@ -66,6 +87,7 @@ export default function RootLayout({
           ` }} />
         */}
         <LocalBusinessSchema pageUrl={BUSINESS.siteUrl} />
+        <WebSiteSchema />
       </head>
       <body className="min-h-full flex flex-col bg-white text-ink font-sans">
         {/*
