@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Hero } from "@/components/sections/Hero";
 import { CTASection } from "@/components/sections/CTASection";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
@@ -40,41 +41,47 @@ export default function AboutPage() {
 
       {/* Company story */}
       <section className="py-16 bg-white" aria-labelledby="story-heading">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <h2 id="story-heading" className="text-2xl sm:text-3xl font-bold text-ink mb-6">
-            Our Story
-          </h2>
-          {/*
-            PLACEHOLDER: Replace with the real company history, founding story, and team background.
-            Include the founding year ([FOUNDING_YEAR]), founding team member names, and
-            specific details that distinguish Force1 from other restoration companies.
-          */}
-          <div className="prose prose-gray max-w-none space-y-5 text-ink-muted">
-            <p>
-              Force1 Restoration was founded with a straightforward mission: provide
-              Volusia County homeowners and businesses with the professional-grade
-              restoration response they need after water damage, mold, storm damage,
-              or fire damage — delivered with the urgency and transparency that emergency
-              situations demand.
-            </p>
-            <p>
-              Operating out of DeBary, FL, Force1 Restoration serves the heart of
-              Volusia County and understands the specific challenges that local homeowners
-              face: the flooding risks along the St. Johns River corridor, the aggressive
-              mold environment created by Central Florida&apos;s year-round humidity,
-              the regular threat of tropical storms and severe thunderstorms, and the
-              lightning-related fire risk that comes with Florida&apos;s intense storm season.
-            </p>
-            <p>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            <div>
+              <h2 id="story-heading" className="text-2xl sm:text-3xl font-bold text-ink mb-6">
+                Our Story
+              </h2>
               {/*
-                PLACEHOLDER: Add specific founding story, team background, and distinguishing
-                details here. E.g., "Force1 was founded in [FOUNDING_YEAR] by [FOUNDER_NAME],
-                a Volusia County resident who saw firsthand the damage that delayed restoration
-                response caused..."
+                PLACEHOLDER: Replace with real company history, founding story, and team background.
+                Include founding year, founder names, and specific differentiators.
               */}
-              [COMPANY_STORY_PLACEHOLDER — Replace with real founding narrative, team background,
-              and specific differentiators. See PLACEHOLDERS.md.]
-            </p>
+              <div className="space-y-5 text-ink-muted">
+                <p>
+                  Force1 Restoration was founded with a straightforward mission: provide
+                  Volusia County homeowners and businesses with the professional-grade
+                  restoration response they need after water damage, mold, storm damage,
+                  or fire damage — delivered with the urgency and transparency that emergency
+                  situations demand.
+                </p>
+                <p>
+                  Operating out of DeBary, FL, Force1 Restoration serves the heart of
+                  Volusia County and understands the specific challenges that local homeowners
+                  face: the flooding risks along the St. Johns River corridor, the aggressive
+                  mold environment created by Central Florida&apos;s year-round humidity,
+                  the regular threat of tropical storms and severe thunderstorms, and the
+                  lightning-related fire risk that comes with Florida&apos;s intense storm season.
+                </p>
+                <p className="text-xs text-ink-light border border-dashed border-border rounded-lg p-3">
+                  [COMPANY_STORY_PLACEHOLDER — Replace with real founding narrative, team background,
+                  and specific differentiators. See PLACEHOLDERS.md.]
+                </p>
+              </div>
+            </div>
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-[var(--shadow-card)]">
+              <Image
+                src="/images/force1-restoration-service-truck-debary-fl.webp"
+                alt="Force1 Restoration service truck and equipment trailer at a job site in DeBary, FL — fully equipped for water damage, mold, storm, and fire restoration"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -130,10 +137,41 @@ export default function AboutPage() {
             hands-on experience in water damage, mold remediation, storm damage, and fire
             damage restoration throughout Central Florida.
           </p>
-          <div className="bg-surface rounded-xl border border-border p-6 text-center text-ink-muted text-sm">
-            [TEAM_SECTION_PLACEHOLDER — Replace with real team member profiles, photos,
-            IICRC certification details, and bios. See PLACEHOLDERS.md.]
+          <div className="grid sm:grid-cols-2 gap-6">
+            <div className="rounded-2xl overflow-hidden shadow-[var(--shadow-card)]">
+              <div className="relative aspect-[3/4]">
+                <Image
+                  src="/images/force1-technician-ppe-mold-remediation-florida.webp"
+                  alt="Force1 Restoration IICRC-certified technician in full protective equipment including respirator, hazmat suit, and gloves — prepared for mold remediation in Central Florida"
+                  fill
+                  className="object-cover object-top"
+                  sizes="(max-width: 640px) 100vw, 50vw"
+                />
+              </div>
+              <div className="bg-surface border-t border-border px-5 py-4">
+                <p className="font-semibold text-ink text-sm">IICRC-Certified Technician</p>
+                <p className="text-ink-muted text-xs mt-1">Full PPE protocol — mold remediation containment setup</p>
+              </div>
+            </div>
+            <div className="rounded-2xl overflow-hidden shadow-[var(--shadow-card)]">
+              <div className="relative aspect-[3/4]">
+                <Image
+                  src="/images/antimicrobial-treatment-mold-prevention-water-damage.webp"
+                  alt="Force1 Restoration technician applying EPA-registered antimicrobial treatment to exposed wall studs during water damage mold prevention protocol"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 640px) 100vw, 50vw"
+                />
+              </div>
+              <div className="bg-surface border-t border-border px-5 py-4">
+                <p className="font-semibold text-ink text-sm">Antimicrobial Treatment</p>
+                <p className="text-ink-muted text-xs mt-1">EPA-registered treatment applied to framing after water damage</p>
+              </div>
+            </div>
           </div>
+          <p className="text-xs text-ink-light mt-4 border border-dashed border-border rounded-lg p-3">
+            [TEAM_SECTION_PLACEHOLDER — Add real team member names, IICRC cert numbers, and individual bios. See PLACEHOLDERS.md.]
+          </p>
         </div>
       </section>
 

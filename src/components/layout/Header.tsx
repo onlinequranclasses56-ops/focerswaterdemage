@@ -50,12 +50,12 @@ export function Header() {
             {/* Logo */}
             <Link href="/" aria-label="Force1 Restoration — home">
               <Image
-                src="/logo.svg"
-                alt="Force1 Restoration"
-                width={180}
-                height={48}
+                src="/images/force1-restoration-logo.webp"
+                alt="Force1 Restoration logo"
+                width={56}
+                height={56}
                 priority
-                className="h-10 md:h-12 w-auto"
+                className="h-10 md:h-12 w-auto object-contain"
               />
             </Link>
 

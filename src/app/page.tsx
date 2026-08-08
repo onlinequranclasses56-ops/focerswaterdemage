@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Hero } from "@/components/sections/Hero";
 import { TrustBar } from "@/components/sections/TrustBar";
 import { ServiceCard } from "@/components/sections/ServiceCard";
@@ -67,6 +68,48 @@ export default function HomePage() {
       />
 
       <TrustBar />
+
+      {/* Photo proof — real jobs in Central Florida */}
+      <section className="py-14 bg-white border-b border-border" aria-label="Force1 Restoration project photos">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-8">
+            <p className="text-xs font-semibold text-primary uppercase tracking-widest mb-2">Real Jobs · Volusia County</p>
+            <h2 className="text-2xl sm:text-3xl font-bold text-ink">
+              Force1 Restoration at Work in Central Florida
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-[var(--shadow-card)]">
+              <Image
+                src="/images/force1-restoration-service-truck-debary-fl.webp"
+                alt="Force1 Restoration branded service truck and debris trailer staged at a residential job site in DeBary, FL"
+                fill
+                className="object-cover"
+                sizes="(max-width: 640px) 100vw, 33vw"
+                priority
+              />
+            </div>
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-[var(--shadow-card)]">
+              <Image
+                src="/images/water-damage-structural-drying-air-movers-florida.webp"
+                alt="Industrial air movers and commercial dehumidifier running during active water damage structural drying in a Central Florida home"
+                fill
+                className="object-cover"
+                sizes="(max-width: 640px) 100vw, 33vw"
+              />
+            </div>
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-[var(--shadow-card)]">
+              <Image
+                src="/images/force1-technician-ppe-mold-remediation-florida.webp"
+                alt="Force1 Restoration IICRC-certified technician in full PPE including respirator and hazmat suit, ready for mold remediation"
+                fill
+                className="object-cover"
+                sizes="(max-width: 640px) 100vw, 33vw"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Services */}
       <section className="py-16 bg-white" aria-labelledby="services-heading">

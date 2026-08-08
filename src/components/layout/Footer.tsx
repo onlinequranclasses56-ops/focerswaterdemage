@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { PhoneNumber } from "@/components/ui/PhoneNumber";
 import { BUSINESS, SERVICES, CITIES } from "@/lib/config";
 
@@ -38,6 +39,15 @@ export function Footer() {
 
           {/* Company info + NAP */}
           <div className="sm:col-span-2 lg:col-span-1">
+            <Link href="/" aria-label="Force1 Restoration — home" className="inline-block mb-3">
+              <Image
+                src="/images/force1-restoration-logo.webp"
+                alt="Force1 Restoration"
+                width={56}
+                height={56}
+                className="h-12 w-auto object-contain bg-white rounded-lg p-1"
+              />
+            </Link>
             <p className="font-bold text-xl text-white mb-1">{BUSINESS.name}</p>
             <p className="text-white/60 text-sm mb-4">{BUSINESS.tagline}</p>
 
