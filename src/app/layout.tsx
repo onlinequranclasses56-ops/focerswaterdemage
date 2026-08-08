@@ -22,6 +22,16 @@ export const metadata: Metadata = {
   description:
     "Force1 Restoration provides 24/7 water damage restoration, mold remediation, storm damage restoration, and fire damage restoration in DeBary and Orange City, FL. IICRC Certified. Call (407) 956-9780.",
   metadataBase: new URL(BUSINESS.siteUrl),
+  icons: {
+    icon: [
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-icon.png" }],
+    other: [
+      { rel: "mask-icon", url: "/favicon.ico" },
+    ],
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
