@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { Hero } from "@/components/sections/Hero";
 import { ServiceCard } from "@/components/sections/ServiceCard";
@@ -10,7 +10,7 @@ import { BUSINESS, SERVICES, CITIES } from "@/lib/config";
 export const metadata: Metadata = {
   title: "Restoration Services in DeBary & Orange City, FL",
   description:
-    "Force1 Restoration provides water damage, mold remediation, storm damage, and fire damage restoration services in DeBary and Orange City, FL. IICRC Certified. Call (407) 956-9780.",
+    "Force1 Restoration provides water damage, mold remediation, storm damage, and fire damage restoration services in DeBary and Orange City, FL. IICRC Certified. Call (864) 734-5702.",
   alternates: { canonical: `${BUSINESS.siteUrl}/services` },
   openGraph: {
     title: "Restoration Services | Force1 Restoration — DeBary & Orange City, FL",

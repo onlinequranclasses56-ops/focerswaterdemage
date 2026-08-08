@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { Hero } from "@/components/sections/Hero";
@@ -13,12 +13,12 @@ import { BUSINESS, SERVICES, CITIES } from "@/lib/config";
 export const metadata: Metadata = {
   title: "24/7 Emergency Restoration in DeBary & Orange City, FL | Force1 Restoration",
   description:
-    "Force1 Restoration — IICRC-certified water damage, mold remediation, storm damage, and fire damage restoration serving DeBary and Orange City, FL. Available 24/7. Call (407) 956-9780.",
+    "Force1 Restoration — IICRC-certified water damage, mold remediation, storm damage, and fire damage restoration serving DeBary and Orange City, FL. Available 24/7. Call (864) 734-5702.",
   alternates: { canonical: BUSINESS.siteUrl },
   openGraph: {
     title: "Force1 Restoration | 24/7 Emergency Restoration in DeBary & Orange City, FL",
     description:
-      "IICRC-certified water damage, mold, storm, and fire restoration. Available 24/7. Call (407) 956-9780.",
+      "IICRC-certified water damage, mold, storm, and fire restoration. Available 24/7. Call (864) 734-5702.",
     url: BUSINESS.siteUrl,
   },
 };

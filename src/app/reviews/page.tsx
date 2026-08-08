@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Hero } from "@/components/sections/Hero";
 import { CTASection } from "@/components/sections/CTASection";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
@@ -10,11 +10,11 @@ import type { Review } from "@/types";
 export const metadata: Metadata = {
   title: "Reviews — Force1 Restoration | DeBary & Orange City, FL",
   description:
-    "Read reviews of Force1 Restoration from DeBary and Orange City, FL customers. IICRC-certified water damage, mold, storm, and fire restoration. Call (407) 956-9780.",
+    "Read reviews of Force1 Restoration from DeBary and Orange City, FL customers. IICRC-certified water damage, mold, storm, and fire restoration. Call (864) 734-5702.",
   alternates: { canonical: `${BUSINESS.siteUrl}/reviews` },
   openGraph: {
     title: "Customer Reviews | Force1 Restoration — DeBary & Orange City, FL",
-    description: "Reviews from Volusia County customers. IICRC-certified restoration. Call (407) 956-9780.",
+    description: "Reviews from Volusia County customers. IICRC-certified restoration. Call (864) 734-5702.",
     url: `${BUSINESS.siteUrl}/reviews`,
   },
 };

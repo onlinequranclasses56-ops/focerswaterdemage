@@ -166,7 +166,7 @@ const SERVICE_CONTENT: Record<string, ServiceContent> = {
     faqs: [
       {
         question: "What should I do immediately after storm damage?",
-        answer: "First, ensure your household's safety — do not enter the structure if there is structural instability, gas smell, or live electrical hazards. Once safe, call Force1 Restoration at (407) 956-9780 for emergency response. Avoid discarding any damaged materials before documentation, as this may affect your insurance claim. Take your own photos if it is safe to do so.",
+        answer: "First, ensure your household's safety — do not enter the structure if there is structural instability, gas smell, or live electrical hazards. Once safe, call Force1 Restoration at (864) 734-5702 for emergency response. Avoid discarding any damaged materials before documentation, as this may affect your insurance claim. Take your own photos if it is safe to do so.",
       },
       {
         question: "How does Force1 Restoration help with storm damage insurance claims?",

@@ -64,7 +64,7 @@ const CITY_CONTENT: Record<string, CityContent> = {
       },
       {
         question: "What neighborhoods in DeBary does Force1 Restoration serve?",
-        answer: "Force1 Restoration serves all of DeBary, FL — including River City area, Saxon Boulevard corridor, Doyle Road neighborhoods, the Highbanks Road waterfront, and all surrounding residential and commercial areas. Call (407) 956-9780 to confirm availability at your specific address.",
+        answer: "Force1 Restoration serves all of DeBary, FL — including River City area, Saxon Boulevard corridor, Doyle Road neighborhoods, the Highbanks Road waterfront, and all surrounding residential and commercial areas. Call (864) 734-5702 to confirm availability at your specific address.",
       },
     ],
   },
@@ -96,7 +96,7 @@ const CITY_CONTENT: Record<string, CityContent> = {
     faqs: [
       {
         question: "How quickly can Force1 Restoration respond to Orange City?",
-        answer: "Force1 Restoration's base in DeBary places Orange City within a short drive for our technicians. We respond to emergency calls in Orange City 24 hours a day, 7 days a week. For water damage, storm damage, and fire emergencies, immediate response is critical — call (407) 956-9780 any time of day or night.",
+        answer: "Force1 Restoration's base in DeBary places Orange City within a short drive for our technicians. We respond to emergency calls in Orange City 24 hours a day, 7 days a week. For water damage, storm damage, and fire emergencies, immediate response is critical — call (864) 734-5702 any time of day or night.",
       },
       {
         question: "Does Force1 Restoration serve commercial properties in Orange City?",

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Hero } from "@/components/sections/Hero";
 import { CTASection } from "@/components/sections/CTASection";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   alternates: { canonical: `${BUSINESS.siteUrl}/faq` },
   openGraph: {
     title: "Restoration FAQ | Force1 Restoration — DeBary & Orange City, FL",
-    description: "Answers to common restoration questions. IICRC-certified, 24/7. Call (407) 956-9780.",
+    description: "Answers to common restoration questions. IICRC-certified, 24/7. Call (864) 734-5702.",
     url: `${BUSINESS.siteUrl}/faq`,
   },
 };
@@ -26,8 +26,8 @@ const BREADCRUMBS = [
 const ALL_FAQS = [
   /* General */
   { question: "What is Force1 Restoration?", answer: "Force1 Restoration is an IICRC-certified property restoration company based in DeBary, FL, serving DeBary, Orange City, and surrounding Volusia County communities. We provide 24/7 emergency response for water damage, mold remediation, storm damage, and fire damage restoration." },
-  { question: "Are you available on weekends and holidays?", answer: "Yes. Force1 Restoration provides emergency response 24 hours a day, 7 days a week, including weekends and holidays. Property damage does not wait for business hours, and neither do we. Call (407) 956-9780 any time." },
-  { question: "What areas does Force1 Restoration serve?", answer: "Force1 Restoration is based in DeBary, FL and serves DeBary, Orange City, and surrounding Volusia County communities. Call (407) 956-9780 to confirm coverage at your specific location." },
+  { question: "Are you available on weekends and holidays?", answer: "Yes. Force1 Restoration provides emergency response 24 hours a day, 7 days a week, including weekends and holidays. Property damage does not wait for business hours, and neither do we. Call (864) 734-5702 any time." },
+  { question: "What areas does Force1 Restoration serve?", answer: "Force1 Restoration is based in DeBary, FL and serves DeBary, Orange City, and surrounding Volusia County communities. Call (864) 734-5702 to confirm coverage at your specific location." },
   { question: "What certifications do Force1 Restoration technicians hold?", answer: "Force1 Restoration technicians are IICRC Certified — the Institute of Inspection, Cleaning and Restoration Certification is the industry gold standard. IICRC certification requires demonstrated technical competency, adherence to published restoration standards, and ongoing education." },
   { question: "Is Force1 Restoration licensed and insured?", answer: "Yes. Force1 Restoration is fully licensed to operate in Florida and carries comprehensive liability insurance coverage. License number: [LICENSE_NUMBER] — contact us to verify current licensing details." },
 
@@ -42,7 +42,7 @@ const ALL_FAQS = [
   { question: "How long does mold remediation take?", answer: "Small projects: 1–2 days. Larger jobs involving wall cavities, HVAC systems, or multiple rooms: 3–7 days or more. Post-remediation verification (air testing) adds time if laboratory results are required. Force1 Restoration provides a timeline estimate after the initial inspection." },
 
   /* Storm damage */
-  { question: "What should I do right after storm damage?", answer: "First ensure everyone's safety — do not enter areas with structural instability, gas smells, or electrical hazards. Call Force1 Restoration at (407) 956-9780 for emergency response. Document visible damage with photos if safe to do so. Do not discard damaged materials before our team has documented the loss for your insurance claim." },
+  { question: "What should I do right after storm damage?", answer: "First ensure everyone's safety — do not enter areas with structural instability, gas smells, or electrical hazards. Call Force1 Restoration at (864) 734-5702 for emergency response. Document visible damage with photos if safe to do so. Do not discard damaged materials before our team has documented the loss for your insurance claim." },
   { question: "Does Force1 Restoration handle storm damage insurance claims?", answer: "Yes. We document damage comprehensively from the moment we arrive and can work alongside your insurance adjuster. Our detailed documentation — photos, moisture readings, written scope — supports your claim and helps ensure the full scope of damage is captured." },
 
   /* Fire damage */
@@ -84,7 +84,7 @@ export default function FAQPage() {
 
       <CTASection
         headline="Still have questions? Call Force1 Restoration."
-        body="A live team member is available 24/7. Call (407) 956-9780 — we answer every call directly."
+        body="A live team member is available 24/7. Call (864) 734-5702 — we answer every call directly."
         location="faq-footer-cta"
         variant="accent"
       />

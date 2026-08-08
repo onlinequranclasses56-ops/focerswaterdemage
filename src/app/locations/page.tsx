@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { Hero } from "@/components/sections/Hero";
 import { CTASection } from "@/components/sections/CTASection";
@@ -9,7 +9,7 @@ import { BUSINESS, SERVICES, CITIES } from "@/lib/config";
 export const metadata: Metadata = {
   title: "Service Areas in Volusia County, FL",
   description:
-    "Force1 Restoration serves DeBary and Orange City, FL with 24/7 water damage, mold remediation, storm damage, and fire damage restoration. IICRC Certified. Call (407) 956-9780.",
+    "Force1 Restoration serves DeBary and Orange City, FL with 24/7 water damage, mold remediation, storm damage, and fire damage restoration. IICRC Certified. Call (864) 734-5702.",
   alternates: { canonical: `${BUSINESS.siteUrl}/locations` },
   openGraph: {
     title: "Service Areas | Force1 Restoration — Volusia County, FL",
