@@ -62,9 +62,11 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  verification: {
+    google: "F7Vvdi2Fi1vZ_vlxD-ZN9kgb4AcrpcpbGHdxfGyGqHo",
+  },
   /*
-   * TODO: Replace [GTM_ID] and uncomment once GTM container ID is provided.
-   * verification: { google: "[GOOGLE_SEARCH_CONSOLE_TOKEN]" },
+   * TODO: Add GTM_ID and uncomment GTM snippets in <head> and <body> below.
    */
 };
 
