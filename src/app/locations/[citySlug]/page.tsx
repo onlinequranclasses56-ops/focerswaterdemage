@@ -178,6 +178,7 @@ export default async function CityPage({ params }: Props) {
         headline={`Restoration Services in ${city.name}, FL`}
         subheadline={`Force1 Restoration provides 24/7 water damage, mold remediation, storm damage, and fire damage restoration in ${city.name}. IICRC-certified technicians, rapid emergency response.`}
         ctaLocation={`city-${city.slug}-hero`}
+        backgroundImage="/images/force1-restoration-service-truck-debary-fl.webp"
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">

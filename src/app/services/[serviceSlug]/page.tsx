@@ -289,6 +289,7 @@ export default async function ServicePage({ params }: Props) {
         headline={`${service.name} in DeBary &amp; Orange City, FL`}
         subheadline={service.shortDescription}
         ctaLocation={`service-${service.slug}-hero`}
+        backgroundImage={SERVICE_IMAGES[serviceSlug]?.[0]?.src}
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">

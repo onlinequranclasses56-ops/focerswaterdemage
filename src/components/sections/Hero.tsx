@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { PhoneNumber } from "@/components/ui/PhoneNumber";
 import { BUSINESS } from "@/lib/config";
 
@@ -13,6 +14,8 @@ interface Props {
   secondaryCta?: { label: string; href: string };
   /** Extra trust line below CTAs */
   trustNote?: string;
+  /** Optional background photo — displayed behind a dark overlay */
+  backgroundImage?: string;
 }
 
 export function Hero({
@@ -21,15 +24,38 @@ export function Hero({
   ctaLocation = "hero",
   secondaryCta = { label: "Request a Free Assessment", href: "/contact" },
   trustNote = "IICRC Certified · Licensed & Insured · DeBary & Orange City, FL",
+  backgroundImage,
 }: Props) {
   return (
     <section
       className="relative bg-primary overflow-hidden"
       aria-labelledby="hero-headline"
     >
+      {/* Background photo */}
+      {backgroundImage && (
+        <Image
+          src={backgroundImage}
+          alt=""
+          fill
+          className="object-cover object-center"
+          sizes="100vw"
+          priority
+        />
+      )}
+
+      {/* Overlay — heavier gradient when image is present so text stays readable */}
+      <div
+        className={`absolute inset-0 pointer-events-none ${
+          backgroundImage
+            ? "bg-gradient-to-r from-primary/95 via-primary/85 to-primary/60"
+            : ""
+        }`}
+        aria-hidden="true"
+      />
+
       {/* Decorative wave */}
       <div
-        className="absolute inset-0 opacity-10 pointer-events-none select-none"
+        className={`absolute inset-0 pointer-events-none select-none ${backgroundImage ? "opacity-5" : "opacity-10"}`}
         aria-hidden="true"
       >
         <svg
@@ -43,7 +69,7 @@ export function Hero({
         </svg>
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 py-16 md:py-24 lg:py-32">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-16 md:py-24 lg:py-32">
         <div className="max-w-3xl">
           <p className="inline-flex items-center gap-2 bg-white/10 text-white/90 text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-full mb-6">
             <span className="h-1.5 w-1.5 rounded-full bg-accent inline-block" />

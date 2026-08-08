@@ -332,6 +332,13 @@ export default async function ComboPage({ params }: Props) {
         headline={comboContent.headline}
         subheadline={comboContent.subheadline}
         ctaLocation={`combo-${service.slug}-${city.slug}-hero`}
+        backgroundImage={
+          service.slug === "mold-remediation"
+            ? "/images/force1-technician-ppe-mold-remediation-florida.webp"
+            : service.slug === "water-damage-restoration"
+            ? "/images/water-damage-structural-drying-air-movers-florida.webp"
+            : "/images/force1-restoration-service-truck-debary-fl.webp"
+        }
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">

@@ -33,6 +33,7 @@ export default function ContactPage() {
         subheadline="For emergencies, call — calling is the fastest way to reach our team 24/7. For non-urgent inquiries, use the form below."
         ctaLocation="contact-hero"
         secondaryCta={{ label: "View FAQ", href: "/faq" }}
+        backgroundImage="/images/force1-restoration-service-truck-debary-fl.webp"
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">

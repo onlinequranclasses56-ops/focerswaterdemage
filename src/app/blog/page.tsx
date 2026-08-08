@@ -58,6 +58,7 @@ export default function BlogHubPage() {
         headline="Restoration Tips &amp; Resources"
         subheadline="Practical advice for Florida homeowners on water damage prevention, storm preparedness, mold risks, and what to do in an emergency."
         ctaLocation="blog-hub-hero"
+        backgroundImage="/images/water-damage-structural-drying-air-movers-florida.webp"
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">

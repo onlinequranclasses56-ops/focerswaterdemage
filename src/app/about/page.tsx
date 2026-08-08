@@ -33,6 +33,7 @@ export default function AboutPage() {
         subheadline="IICRC-certified restoration professionals serving DeBary, Orange City, and surrounding Volusia County communities."
         ctaLocation="about-hero"
         secondaryCta={{ label: "Our Services", href: "/services" }}
+        backgroundImage="/images/force1-restoration-service-truck-debary-fl.webp"
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">

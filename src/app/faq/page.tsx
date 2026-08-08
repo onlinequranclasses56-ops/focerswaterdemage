@@ -64,6 +64,7 @@ export default function FAQPage() {
         headline="Restoration FAQ"
         subheadline="Common questions about water damage, mold, storm damage, fire damage, and the restoration process — answered by Force1 Restoration."
         ctaLocation="faq-hero"
+        backgroundImage="/images/water-damage-structural-drying-air-movers-florida.webp"
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">

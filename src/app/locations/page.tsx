@@ -32,6 +32,7 @@ export default function LocationsHubPage() {
         headline="Force1 Restoration Service Areas in Volusia County"
         subheadline="Force1 Restoration provides IICRC-certified water damage, mold, storm, and fire restoration throughout DeBary, Orange City, and surrounding Volusia County communities."
         ctaLocation="locations-hub-hero"
+        backgroundImage="/images/force1-restoration-service-truck-debary-fl.webp"
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">

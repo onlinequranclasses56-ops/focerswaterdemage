@@ -65,6 +65,7 @@ export default function HomePage() {
         headline="24/7 Emergency Restoration in DeBary &amp; Orange City, FL"
         subheadline="Force1 Restoration responds immediately to water damage, mold, storm damage, and fire damage. IICRC-certified technicians available around the clock."
         ctaLocation="home-hero"
+        backgroundImage="/images/force1-restoration-service-truck-debary-fl.webp"
       />
 
       <TrustBar />
