@@ -1,0 +1,38 @@
+# ─── Netlify configuration for Force1 Restoration (Next.js 16 App Router) ───
+
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION            = "20"
+  NEXT_TELEMETRY_DISABLED = "1"
+  # Set NEXT_PUBLIC_SITE_URL and CRON_SECRET in the Netlify UI → Site settings → Environment variables
+
+# Next.js App Router runtime — handles SSR, API routes, image optimisation
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+# Cache node_modules between deploys for faster builds
+[build.processing]
+  skip_processing = false
+
+# Security and performance headers applied to every response
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options        = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy        = "strict-origin-when-cross-origin"
+    Permissions-Policy     = "camera=(), microphone=(), geolocation=()"
+
+# Long-cache for static assets (Next.js hashes filenames so safe to cache forever)
+[[headers]]
+  for = "/_next/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
