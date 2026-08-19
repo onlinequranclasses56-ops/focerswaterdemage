@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Hero } from "@/components/sections/Hero";
 import { CTASection } from "@/components/sections/CTASection";
@@ -9,10 +9,10 @@ import { BUSINESS, SERVICES, CITIES } from "@/lib/config";
 export const metadata: Metadata = {
   title: "Service Areas in Volusia County, FL",
   description:
-    "Force1 Restoration serves DeBary and Orange City, FL with 24/7 water damage, mold remediation, storm damage, and fire damage restoration. IICRC Certified. Call (864) 734-5702.",
+    "Forces Water Damage DeBary serves DeBary and Orange City, FL with 24/7 water damage, mold remediation, storm damage, and fire damage restoration. IICRC Certified. Call (864) 734-5702.",
   alternates: { canonical: `${BUSINESS.siteUrl}/locations` },
   openGraph: {
-    title: "Service Areas | Force1 Restoration — Volusia County, FL",
+    title: "Service Areas | Forces Water Damage DeBary — Volusia County, FL",
     description: "Serving DeBary and Orange City, FL. IICRC-certified restoration available 24/7.",
     url: `${BUSINESS.siteUrl}/locations`,
   },
@@ -29,8 +29,8 @@ export default function LocationsHubPage() {
       <BreadcrumbSchema items={BREADCRUMBS} />
 
       <Hero
-        headline="Force1 Restoration Service Areas in Volusia County"
-        subheadline="Force1 Restoration provides IICRC-certified water damage, mold, storm, and fire restoration throughout DeBary, Orange City, and surrounding Volusia County communities."
+        headline="Forces Water Damage DeBary Service Areas in Volusia County"
+        subheadline="Forces Water Damage DeBary provides IICRC-certified water damage, mold, storm, and fire restoration throughout DeBary, Orange City, and surrounding Volusia County communities."
         ctaLocation="locations-hub-hero"
         backgroundImage="/images/force1-restoration-service-truck-debary-fl.webp"
       />
@@ -46,7 +46,7 @@ export default function LocationsHubPage() {
             Cities We Serve
           </h2>
           <p className="text-ink-muted mb-10 max-w-2xl">
-            Force1 Restoration is based in DeBary, FL and serves the surrounding Volusia County
+            Forces Water Damage DeBary is based in DeBary, FL and serves the surrounding Volusia County
             area. Our team is familiar with the local geography, building stock, and
             weather patterns that create unique restoration challenges in each city.
           </p>
@@ -100,7 +100,7 @@ export default function LocationsHubPage() {
             Serving the Greater Volusia County Area
           </h2>
           <p className="text-ink-muted">
-            In addition to DeBary and Orange City, Force1 Restoration frequently responds to
+            In addition to DeBary and Orange City, Forces Water Damage DeBary frequently responds to
             calls throughout surrounding Volusia County communities. Call{" "}
             <Link href={BUSINESS.phoneHref} className="font-semibold text-primary hover:text-primary-dark">
               {BUSINESS.phone}
@@ -113,7 +113,7 @@ export default function LocationsHubPage() {
 
       <CTASection
         headline="Need restoration in Volusia County, FL?"
-        body="Force1 Restoration is available 24/7 for all emergency and scheduled work in DeBary, Orange City, and surrounding communities."
+        body="Forces Water Damage DeBary is available 24/7 for all emergency and scheduled work in DeBary, Orange City, and surrounding communities."
         location="locations-hub-footer-cta"
         variant="primary"
       />

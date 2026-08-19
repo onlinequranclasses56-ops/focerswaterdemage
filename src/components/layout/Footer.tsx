@@ -39,10 +39,10 @@ export function Footer() {
 
           {/* Company info + NAP */}
           <div className="sm:col-span-2 lg:col-span-1">
-            <Link href="/" aria-label="Force1 Restoration — home" className="inline-block mb-3">
+            <Link href="/" aria-label="Forces Water Damage DeBary — home" className="inline-block mb-3">
               <Image
                 src="/images/force1-restoration-logo.webp"
-                alt="Force1 Restoration"
+                alt="Forces Water Damage DeBary"
                 width={56}
                 height={56}
                 className="h-12 w-auto object-contain bg-white rounded-lg p-1"

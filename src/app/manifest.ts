@@ -2,8 +2,8 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Force1 Restoration",
-    short_name: "Force1",
+    name: "Forces Water Damage DeBary",
+    short_name: "Forces WD",
     description:
       "24/7 Water Damage, Mold, Storm & Fire Restoration in DeBary & Orange City, FL",
     start_url: "/",

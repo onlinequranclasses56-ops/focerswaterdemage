@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Hero } from "@/components/sections/Hero";
 import { ServiceCard } from "@/components/sections/ServiceCard";
@@ -10,10 +10,10 @@ import { BUSINESS, SERVICES, CITIES } from "@/lib/config";
 export const metadata: Metadata = {
   title: "Restoration Services in DeBary & Orange City, FL",
   description:
-    "Force1 Restoration provides water damage, mold remediation, storm damage, and fire damage restoration services in DeBary and Orange City, FL. IICRC Certified. Call (864) 734-5702.",
+    "Forces Water Damage DeBary provides water damage, mold remediation, storm damage, and fire damage restoration services in DeBary and Orange City, FL. IICRC Certified. Call (864) 734-5702.",
   alternates: { canonical: `${BUSINESS.siteUrl}/services` },
   openGraph: {
-    title: "Restoration Services | Force1 Restoration — DeBary & Orange City, FL",
+    title: "Restoration Services | Forces Water Damage DeBary — DeBary & Orange City, FL",
     description: "Full-service restoration: water damage, mold, storm damage, and fire damage. IICRC certified. Available 24/7.",
     url: `${BUSINESS.siteUrl}/services`,
   },
@@ -31,7 +31,7 @@ export default function ServicesHubPage() {
 
       <Hero
         headline="Restoration Services in DeBary &amp; Orange City, FL"
-        subheadline="Force1 Restoration provides IICRC-certified emergency and non-emergency restoration for water damage, mold, storm damage, and fire damage throughout Volusia County."
+        subheadline="Forces Water Damage DeBary provides IICRC-certified emergency and non-emergency restoration for water damage, mold, storm damage, and fire damage throughout Volusia County."
         ctaLocation="services-hub-hero"
         backgroundImage="/images/water-damage-structural-drying-air-movers-florida.webp"
       />
@@ -102,7 +102,7 @@ export default function ServicesHubPage() {
 
       <CTASection
         headline="Need restoration in DeBary or Orange City, FL?"
-        body="Force1 Restoration is available 24/7 for all emergency and scheduled restoration work. IICRC-certified technicians, fast response."
+        body="Forces Water Damage DeBary is available 24/7 for all emergency and scheduled restoration work. IICRC-certified technicians, fast response."
         location="services-hub-footer-cta"
         variant="primary"
       />

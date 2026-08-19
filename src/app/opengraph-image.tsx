@@ -1,7 +1,7 @@
-﻿import { ImageResponse } from "next/og";
+import { ImageResponse } from "next/og";
 
 export const alt =
-  "Force1 Restoration — 24/7 Water Damage, Mold, Storm & Fire Restoration in DeBary & Orange City, FL";
+  "Forces Water Damage DeBary — 24/7 Water Damage, Mold, Storm & Fire Restoration in DeBary & Orange City, FL";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -56,7 +56,7 @@ export default function Image() {
             lineHeight: 1.05,
           }}
         >
-          Force1 Restoration
+          Forces Water Damage DeBary
         </div>
         <div
           style={{

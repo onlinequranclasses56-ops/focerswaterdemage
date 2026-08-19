@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import { Hero } from "@/components/sections/Hero";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
@@ -7,12 +7,12 @@ import { BUSINESS } from "@/lib/config";
 import { ContactForm } from "./ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact Force1 Restoration — DeBary & Orange City, FL",
+  title: "Contact Forces Water Damage DeBary — DeBary & Orange City, FL",
   description:
-    "Contact Force1 Restoration for 24/7 emergency response in DeBary and Orange City, FL. Call (864) 734-5702 or submit a request. IICRC-certified restoration.",
+    "Contact Forces Water Damage DeBary for 24/7 emergency response in DeBary and Orange City, FL. Call (864) 734-5702 or submit a request. IICRC-certified restoration.",
   alternates: { canonical: `${BUSINESS.siteUrl}/contact` },
   openGraph: {
-    title: "Contact Force1 Restoration | DeBary & Orange City, FL",
+    title: "Contact Forces Water Damage DeBary | DeBary & Orange City, FL",
     description: "24/7 emergency response. Call (864) 734-5702. Water damage, mold, storm, fire restoration.",
     url: `${BUSINESS.siteUrl}/contact`,
   },
@@ -29,7 +29,7 @@ export default function ContactPage() {
       <BreadcrumbSchema items={BREADCRUMBS} />
 
       <Hero
-        headline="Contact Force1 Restoration"
+        headline="Contact Forces Water Damage DeBary"
         subheadline="For emergencies, call — calling is the fastest way to reach our team 24/7. For non-urgent inquiries, use the form below."
         ctaLocation="contact-hero"
         secondaryCta={{ label: "View FAQ", href: "/faq" }}

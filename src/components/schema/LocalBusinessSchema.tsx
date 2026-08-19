@@ -19,7 +19,7 @@ export function LocalBusinessSchema({ pageUrl: _pageUrl }: Props) {
     name: BUSINESS.name,
     legalName: BUSINESS.legalName,
     description:
-      "Force1 Restoration provides 24/7 emergency water damage restoration, mold remediation, storm damage restoration, and fire damage restoration throughout DeBary and Orange City, FL. IICRC Certified technicians respond in under an hour.",
+      "Forces Water Damage DeBary provides 24/7 emergency water damage restoration, mold remediation, storm damage restoration, and fire damage restoration throughout DeBary and Orange City, FL. IICRC Certified technicians respond in under an hour.",
     url: BUSINESS.siteUrl,
     telephone: BUSINESS.phone,
     email: BUSINESS.email,

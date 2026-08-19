@@ -7,13 +7,13 @@ import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
 import { BUSINESS } from "@/lib/config";
 
 export const metadata: Metadata = {
-  title: "Restoration Tips & Resources — Blog | Force1 Restoration",
+  title: "Restoration Tips & Resources — Blog | Forces Water Damage DeBary",
   description:
-    "Restoration tips, storm preparedness guides, mold prevention advice, and more from Force1 Restoration serving DeBary and Orange City, FL.",
+    "Restoration tips, storm preparedness guides, mold prevention advice, and more from Forces Water Damage DeBary serving DeBary and Orange City, FL.",
   alternates: { canonical: `${BUSINESS.siteUrl}/blog` },
   openGraph: {
-    title: "Blog | Force1 Restoration — DeBary & Orange City, FL",
-    description: "Restoration tips and resources from Force1 Restoration.",
+    title: "Blog | Forces Water Damage DeBary — DeBary & Orange City, FL",
+    description: "Restoration tips and resources from Forces Water Damage DeBary.",
     url: `${BUSINESS.siteUrl}/blog`,
   },
 };
@@ -84,7 +84,7 @@ export default function BlogHubPage() {
                     month: "long",
                     day: "numeric",
                   })}
-                  {" · "}Force1 Restoration
+                  {" · "}Forces Water Damage DeBary
                 </p>
                 <h3 id={`post-${post.slug}`} className="font-bold text-ink text-lg mb-2">
                   <Link
@@ -115,7 +115,7 @@ export default function BlogHubPage() {
 
       <CTASection
         headline="Emergency restoration in DeBary or Orange City, FL?"
-        body="Force1 Restoration is available 24/7. IICRC-certified technicians respond immediately."
+        body="Forces Water Damage DeBary is available 24/7. IICRC-certified technicians respond immediately."
         location="blog-hub-footer-cta"
         variant="accent"
       />

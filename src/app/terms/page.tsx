@@ -4,8 +4,8 @@ import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
 import { BUSINESS } from "@/lib/config";
 
 export const metadata: Metadata = {
-  title: "Terms of Service | Force1 Restoration",
-  description: "Terms of service for Force1 Restoration — DeBary and Orange City, FL.",
+  title: "Terms of Service | Forces Water Damage DeBary",
+  description: "Terms of service for Forces Water Damage DeBary — DeBary and Orange City, FL.",
   alternates: { canonical: `${BUSINESS.siteUrl}/terms` },
   robots: { index: false, follow: true },
 };

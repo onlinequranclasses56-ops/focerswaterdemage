@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { Hero } from "@/components/sections/Hero";
@@ -11,12 +11,12 @@ import { PhoneNumber } from "@/components/ui/PhoneNumber";
 import { BUSINESS, SERVICES, CITIES } from "@/lib/config";
 
 export const metadata: Metadata = {
-  title: "24/7 Emergency Restoration in DeBary & Orange City, FL | Force1 Restoration",
+  title: "24/7 Emergency Restoration in DeBary & Orange City, FL | Forces Water Damage DeBary",
   description:
-    "Force1 Restoration — IICRC-certified water damage, mold remediation, storm damage, and fire damage restoration serving DeBary and Orange City, FL. Available 24/7. Call (864) 734-5702.",
+    "Forces Water Damage DeBary — IICRC-certified water damage, mold remediation, storm damage, and fire damage restoration serving DeBary and Orange City, FL. Available 24/7. Call (864) 734-5702.",
   alternates: { canonical: BUSINESS.siteUrl },
   openGraph: {
-    title: "Force1 Restoration | 24/7 Emergency Restoration in DeBary & Orange City, FL",
+    title: "Forces Water Damage DeBary | 24/7 Emergency Restoration in DeBary & Orange City, FL",
     description:
       "IICRC-certified water damage, mold, storm, and fire restoration. Available 24/7. Call (864) 734-5702.",
     url: BUSINESS.siteUrl,
@@ -25,14 +25,14 @@ export const metadata: Metadata = {
 
 const HOME_FAQS = [
   {
-    question: "How quickly can Force1 Restoration respond to an emergency?",
+    question: "How quickly can Forces Water Damage DeBary respond to an emergency?",
     answer:
-      "Force1 Restoration operates 24 hours a day, 7 days a week — including weekends and holidays. For customers in DeBary and Orange City, FL, our goal is to have a certified technician on-site as quickly as possible after your call. The faster water or fire damage is addressed, the lower the total restoration cost and the lower the risk of secondary damage such as mold growth.",
+      "Forces Water Damage DeBary operates 24 hours a day, 7 days a week — including weekends and holidays. For customers in DeBary and Orange City, FL, our goal is to have a certified technician on-site as quickly as possible after your call. The faster water or fire damage is addressed, the lower the total restoration cost and the lower the risk of secondary damage such as mold growth.",
   },
   {
     question: "Do you work directly with homeowners' insurance companies?",
     answer:
-      "Yes. Force1 Restoration works alongside most major insurance carriers and can help document the damage for your claim. We recommend calling us first so we can begin mitigation immediately — delaying restoration while waiting for an adjuster can significantly worsen damage and increase claim costs. We photograph and document every step of the process.",
+      "Yes. Forces Water Damage DeBary works alongside most major insurance carriers and can help document the damage for your claim. We recommend calling us first so we can begin mitigation immediately — delaying restoration while waiting for an adjuster can significantly worsen damage and increase claim costs. We photograph and document every step of the process.",
   },
   {
     question: "What is the typical water damage restoration process?",
@@ -40,19 +40,19 @@ const HOME_FAQS = [
       "Water damage restoration follows a structured process: (1) Emergency contact and rapid assessment, (2) water extraction using industrial pumps, (3) structural drying with professional air movers and dehumidifiers, (4) moisture monitoring until readings return to normal, (5) cleaning and sanitizing affected materials, and (6) final restoration and repair. IICRC S500 standards guide every step.",
   },
   {
-    question: "Is Force1 Restoration available on weekends and holidays?",
+    question: "Is Forces Water Damage DeBary available on weekends and holidays?",
     answer:
-      "Yes — Force1 Restoration provides 24/7 emergency service every day of the year, including weekends, holidays, and overnight. Water damage, storm damage, and fire damage do not follow a business schedule, and delaying response by even a few hours can dramatically increase restoration costs and mold risk.",
+      "Yes — Forces Water Damage DeBary provides 24/7 emergency service every day of the year, including weekends, holidays, and overnight. Water damage, storm damage, and fire damage do not follow a business schedule, and delaying response by even a few hours can dramatically increase restoration costs and mold risk.",
   },
   {
-    question: "What certifications do Force1 Restoration technicians hold?",
+    question: "What certifications do Forces Water Damage DeBary technicians hold?",
     answer:
-      "Force1 Restoration technicians are IICRC Certified — the Institute of Inspection, Cleaning and Restoration Certification is the globally recognized standard for the restoration industry. IICRC certification requires demonstrated technical proficiency, adherence to industry standards, and ongoing education. We are also fully licensed and insured to operate in the state of Florida.",
+      "Forces Water Damage DeBary technicians are IICRC Certified — the Institute of Inspection, Cleaning and Restoration Certification is the globally recognized standard for the restoration industry. IICRC certification requires demonstrated technical proficiency, adherence to industry standards, and ongoing education. We are also fully licensed and insured to operate in the state of Florida.",
   },
   {
     question: "Can mold grow after water damage, and how quickly?",
     answer:
-      "Yes — mold can begin to grow within 24 to 48 hours of water exposure under the right temperature and humidity conditions. Florida's warm climate accelerates this timeline, which is why rapid water extraction and drying is critical. Force1 Restoration uses industrial drying equipment and moisture meters to verify structures are fully dry before closing out a job.",
+      "Yes — mold can begin to grow within 24 to 48 hours of water exposure under the right temperature and humidity conditions. Florida's warm climate accelerates this timeline, which is why rapid water extraction and drying is critical. Forces Water Damage DeBary uses industrial drying equipment and moisture meters to verify structures are fully dry before closing out a job.",
   },
 ] as const;
 
@@ -63,7 +63,7 @@ export default function HomePage() {
 
       <Hero
         headline="24/7 Emergency Restoration in DeBary &amp; Orange City, FL"
-        subheadline="Force1 Restoration responds immediately to water damage, mold, storm damage, and fire damage. IICRC-certified technicians available around the clock."
+        subheadline="Forces Water Damage DeBary responds immediately to water damage, mold, storm damage, and fire damage. IICRC-certified technicians available around the clock."
         ctaLocation="home-hero"
         backgroundImage="/images/force1-restoration-service-truck-debary-fl.webp"
       />
@@ -71,19 +71,19 @@ export default function HomePage() {
       <TrustBar />
 
       {/* Photo proof — real jobs in Central Florida */}
-      <section className="py-14 bg-white border-b border-border" aria-label="Force1 Restoration project photos">
+      <section className="py-14 bg-white border-b border-border" aria-label="Forces Water Damage DeBary project photos">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-8">
             <p className="text-xs font-semibold text-primary uppercase tracking-widest mb-2">Real Jobs · Volusia County</p>
             <h2 className="text-2xl sm:text-3xl font-bold text-ink">
-              Force1 Restoration at Work in Central Florida
+              Forces Water Damage DeBary at Work in Central Florida
             </h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-[var(--shadow-card)]">
               <Image
                 src="/images/force1-restoration-service-truck-debary-fl.webp"
-                alt="Force1 Restoration branded service truck and debris trailer staged at a residential job site in DeBary, FL"
+                alt="Forces Water Damage DeBary branded service truck and debris trailer staged at a residential job site in DeBary, FL"
                 fill
                 className="object-cover"
                 sizes="(max-width: 640px) 100vw, 33vw"
@@ -102,7 +102,7 @@ export default function HomePage() {
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-[var(--shadow-card)]">
               <Image
                 src="/images/force1-technician-ppe-mold-remediation-florida.webp"
-                alt="Force1 Restoration IICRC-certified technician in full PPE including respirator and hazmat suit, ready for mold remediation"
+                alt="Forces Water Damage DeBary IICRC-certified technician in full PPE including respirator and hazmat suit, ready for mold remediation"
                 fill
                 className="object-cover"
                 sizes="(max-width: 640px) 100vw, 33vw"
@@ -120,7 +120,7 @@ export default function HomePage() {
               Our Restoration Services
             </h2>
             <p className="text-ink-muted max-w-2xl mx-auto">
-              Force1 Restoration handles every phase of damage recovery — from emergency
+              Forces Water Damage DeBary handles every phase of damage recovery — from emergency
               extraction through final reconstruction — so you only need one call.
             </p>
           </div>
@@ -147,10 +147,10 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 id="why-heading" className="text-2xl sm:text-3xl font-bold text-ink mb-4">
-                Why Volusia County Homeowners Trust Force1 Restoration
+                Why Volusia County Homeowners Trust Forces Water Damage DeBary
               </h2>
               <p className="text-ink-muted mb-6">
-                Force1 Restoration is the restoration company DeBary and Orange City
+                Forces Water Damage DeBary is the restoration company DeBary and Orange City
                 residents call when it matters most. Our IICRC-certified team brings
                 professional-grade equipment and a proven process to every job — whether
                 a burst pipe at 2 a.m. or extensive storm flooding after a tropical system.
@@ -175,7 +175,7 @@ export default function HomePage() {
                   href="/about"
                   className="inline-flex items-center gap-2 text-primary font-semibold hover:text-primary-dark transition-colors"
                 >
-                  Learn more about Force1 Restoration
+                  Learn more about Forces Water Damage DeBary
                   <ChevronIcon />
                 </Link>
               </div>
@@ -262,7 +262,7 @@ export default function HomePage() {
       <FAQSection faqs={HOME_FAQS} />
 
       <CTASection
-        headline="Emergency? Call Force1 Restoration Now."
+        headline="Emergency? Call Forces Water Damage DeBary Now."
         body="Water damage, mold, storm damage, and fire damage restoration — available 24/7 in DeBary and Orange City, FL. IICRC-certified technicians ready to respond."
         location="home-footer-cta"
         variant="primary"

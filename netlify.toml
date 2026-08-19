@@ -1,4 +1,4 @@
-# ─── Netlify configuration for Force1 Restoration (Next.js 16 App Router) ───
+# ─── Netlify configuration for Forces Water Damage DeBary (Next.js 16 App Router) ───
 
 [build]
   command = "npm run build"

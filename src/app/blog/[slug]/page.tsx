@@ -72,7 +72,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: post.description,
     alternates: { canonical },
     openGraph: {
-      title: `${post.title} | Force1 Restoration`,
+      title: `${post.title} | Forces Water Damage DeBary`,
       description: post.description,
       url: canonical,
       type: "article",
@@ -130,7 +130,7 @@ export default async function BlogPostPage({ params }: Props) {
               month: "long",
               day: "numeric",
             })}{" "}
-            · Force1 Restoration
+            · Forces Water Damage DeBary
           </p>
           <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
             {post.title}
@@ -149,7 +149,7 @@ export default async function BlogPostPage({ params }: Props) {
         <hr />
         <p className="text-sm text-ink-muted">
           <em>
-            Force1 Restoration provides IICRC-certified water damage restoration, mold
+            Forces Water Damage DeBary provides IICRC-certified water damage restoration, mold
             remediation, storm damage restoration, and fire damage restoration in DeBary
             and Orange City, FL. For emergencies, call{" "}
             <Link href={BUSINESS.phoneHref} className="text-primary font-semibold">
@@ -162,7 +162,7 @@ export default async function BlogPostPage({ params }: Props) {
 
       <CTASection
         headline="Need restoration help in DeBary or Orange City, FL?"
-        body="Force1 Restoration is available 24/7 — IICRC-certified emergency response."
+        body="Forces Water Damage DeBary is available 24/7 — IICRC-certified emergency response."
         location={`blog-${slug}-footer-cta`}
         variant="accent"
       />

@@ -4,8 +4,8 @@ import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
 import { BUSINESS } from "@/lib/config";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Force1 Restoration",
-  description: "Privacy policy for Force1 Restoration — DeBary and Orange City, FL.",
+  title: "Privacy Policy | Forces Water Damage DeBary",
+  description: "Privacy policy for Forces Water Damage DeBary — DeBary and Orange City, FL.",
   alternates: { canonical: `${BUSINESS.siteUrl}/privacy-policy` },
   robots: { index: false, follow: true },
 };

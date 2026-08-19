@@ -1,5 +1,5 @@
-﻿/*
- * Site-wide business configuration — Force1 Restoration
+/*
+ * Site-wide business configuration — Forces Water Damage DeBary
  *
  * PLACEHOLDER values are marked with [SQUARE_BRACKETS] or REPLACE comments.
  * See PLACEHOLDERS.md for the full resolution list.
@@ -10,8 +10,8 @@
  */
 
 export const BUSINESS = {
-  name: "Force1 Restoration",
-  legalName: "Force1 Restoration LLC", /* REPLACE if legal name differs */
+  name: "Forces Water Damage DeBary",
+  legalName: "Forces Water Damage DeBary LLC", /* REPLACE if legal name differs */
   tagline: "[TAGLINE]",                /* REPLACE: short value-prop tagline */
 
   /* Contact */
@@ -72,7 +72,7 @@ export const SERVICES = [
     shortDescription:
       "24/7 emergency water extraction, structural drying, and full restoration for homes and businesses in Volusia County.",
     metaDescription:
-      "Force1 Restoration provides 24/7 water damage restoration in DeBary and Orange City, FL. IICRC-certified technicians, rapid response. Call (864) 734-5702.",
+      "Forces Water Damage DeBary provides 24/7 water damage restoration in DeBary and Orange City, FL. IICRC-certified technicians, rapid response. Call (864) 734-5702.",
     icon: "💧",
     color: "blue",
   },
@@ -82,7 +82,7 @@ export const SERVICES = [
     shortDescription:
       "Certified mold inspection, containment, safe removal, and prevention by IICRC-trained technicians serving DeBary and Orange City.",
     metaDescription:
-      "Professional mold remediation in DeBary and Orange City, FL. IICRC-certified, safe containment and removal. Force1 Restoration — call (864) 734-5702.",
+      "Professional mold remediation in DeBary and Orange City, FL. IICRC-certified, safe containment and removal. Forces Water Damage DeBary — call (864) 734-5702.",
     icon: "🔬",
     color: "green",
   },
@@ -92,7 +92,7 @@ export const SERVICES = [
     shortDescription:
       "Rapid storm damage assessment and full restoration after hurricanes, tropical storms, and severe weather across Central Florida.",
     metaDescription:
-      "Storm damage restoration in DeBary and Orange City, FL. Hurricane, flood, and wind damage cleanup by Force1 Restoration. Call (864) 734-5702.",
+      "Storm damage restoration in DeBary and Orange City, FL. Hurricane, flood, and wind damage cleanup by Forces Water Damage DeBary. Call (864) 734-5702.",
     icon: "⛈️",
     color: "slate",
   },
@@ -102,7 +102,7 @@ export const SERVICES = [
     shortDescription:
       "Complete fire, smoke, and soot cleanup with structural restoration and odor elimination throughout Volusia County.",
     metaDescription:
-      "Fire damage restoration in DeBary and Orange City, FL. Smoke, soot, and structural cleanup by Force1 Restoration. Call (864) 734-5702.",
+      "Fire damage restoration in DeBary and Orange City, FL. Smoke, soot, and structural cleanup by Forces Water Damage DeBary. Call (864) 734-5702.",
     icon: "🔥",
     color: "orange",
   },
@@ -118,9 +118,9 @@ export const CITIES = [
     county: "Volusia County",
     geo: { latitude: "28.8762", longitude: "-81.3135" },
     description:
-      "DeBary is Force1 Restoration's home base, located along the St. Johns River in Volusia County. Our team provides the fastest emergency response times in DeBary and surrounding communities.",
+      "DeBary is Forces Water Damage DeBary's home base, located along the St. Johns River in Volusia County. Our team provides the fastest emergency response times in DeBary and surrounding communities.",
     metaDescription:
-      "Force1 Restoration serves DeBary, FL with 24/7 water damage, mold, storm, and fire restoration. IICRC-certified — call (864) 734-5702.",
+      "Forces Water Damage DeBary serves DeBary, FL with 24/7 water damage, mold, storm, and fire restoration. IICRC-certified — call (864) 734-5702.",
     localContext:
       "DeBary's proximity to the St. Johns River creates unique flood and moisture risks, particularly for homes near the river corridor and low-lying neighborhoods.",
   },
@@ -131,9 +131,9 @@ export const CITIES = [
     county: "Volusia County",
     geo: { latitude: "28.9495", longitude: "-81.2987" },
     description:
-      "Force1 Restoration serves Orange City, FL with the same 24/7 emergency response and IICRC-certified technicians available to DeBary customers — typically arriving in under an hour.",
+      "Forces Water Damage DeBary serves Orange City, FL with the same 24/7 emergency response and IICRC-certified technicians available to DeBary customers — typically arriving in under an hour.",
     metaDescription:
-      "Force1 Restoration serves Orange City, FL with 24/7 water damage, mold, storm, and fire restoration. IICRC-certified — call (864) 734-5702.",
+      "Forces Water Damage DeBary serves Orange City, FL with 24/7 water damage, mold, storm, and fire restoration. IICRC-certified — call (864) 734-5702.",
     localContext:
       "Orange City's mix of established neighborhoods, commercial corridors, and proximity to Blue Spring creates a distinct set of water intrusion and storm damage scenarios.",
   },
