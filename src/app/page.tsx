@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
 import { Hero } from "@/components/sections/Hero";
 import { TrustBar } from "@/components/sections/TrustBar";
 import { ServiceCard } from "@/components/sections/ServiceCard";
@@ -65,49 +64,53 @@ export default function HomePage() {
         headline="24/7 Emergency Restoration in DeBary &amp; Orange City, FL"
         subheadline="Forces Water Damage DeBary responds immediately to water damage, mold, storm damage, and fire damage. IICRC-certified technicians available around the clock."
         ctaLocation="home-hero"
-        backgroundImage="/images/force1-restoration-service-truck-debary-fl.webp"
       />
 
       <TrustBar />
 
-      {/* Photo proof — real jobs in Central Florida */}
-      <section className="py-14 bg-white border-b border-border" aria-label="Forces Water Damage DeBary project photos">
+      {/* ── Why call NOW — pay-per-call urgency strip ── */}
+      <section className="py-10 bg-surface border-b border-border" aria-label="Why call now">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="text-center mb-8">
-            <p className="text-xs font-semibold text-primary uppercase tracking-widest mb-2">Real Jobs · Volusia County</p>
-            <h2 className="text-2xl sm:text-3xl font-bold text-ink">
-              Forces Water Damage DeBary at Work in Central Florida
-            </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+            {[
+              {
+                icon: <ClockIcon />,
+                stat: "< 60 Min",
+                label: "Technician dispatched",
+                sub: "Fastest response in Volusia County",
+              },
+              {
+                icon: <PhoneIconLg />,
+                stat: "Real Person",
+                label: "Answers every call",
+                sub: "No voicemail · No hold music",
+              },
+              {
+                icon: <ShieldIcon />,
+                stat: "IICRC Certified",
+                label: "Industry gold standard",
+                sub: "Licensed & fully insured in FL",
+              },
+            ].map((item) => (
+              <div key={item.stat} className="flex flex-col items-center gap-2 p-6 bg-white rounded-2xl border border-border shadow-[var(--shadow-card)]">
+                <div className="text-accent mb-1">{item.icon}</div>
+                <p className="text-2xl font-extrabold text-ink">{item.stat}</p>
+                <p className="font-semibold text-ink text-sm">{item.label}</p>
+                <p className="text-xs text-ink-muted">{item.sub}</p>
+              </div>
+            ))}
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-[var(--shadow-card)]">
-              <Image
-                src="/images/force1-restoration-service-truck-debary-fl.webp"
-                alt="Forces Water Damage DeBary branded service truck and debris trailer staged at a residential job site in DeBary, FL"
-                fill
-                className="object-cover"
-                sizes="(max-width: 640px) 100vw, 33vw"
-                priority
-              />
-            </div>
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-[var(--shadow-card)]">
-              <Image
-                src="/images/water-damage-structural-drying-air-movers-florida.webp"
-                alt="Industrial air movers and commercial dehumidifier running during active water damage structural drying in a Central Florida home"
-                fill
-                className="object-cover"
-                sizes="(max-width: 640px) 100vw, 33vw"
-              />
-            </div>
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-[var(--shadow-card)]">
-              <Image
-                src="/images/force1-technician-ppe-mold-remediation-florida.webp"
-                alt="Forces Water Damage DeBary IICRC-certified technician in full PPE including respirator and hazmat suit, ready for mold remediation"
-                fill
-                className="object-cover"
-                sizes="(max-width: 640px) 100vw, 33vw"
-              />
-            </div>
+
+          {/* Inline call CTA */}
+          <div className="text-center mt-8">
+            <PhoneNumber
+              location="home-urgency-strip"
+              className="cta-pulse inline-flex items-center gap-3 bg-accent hover:bg-accent-dark text-white font-extrabold text-xl px-10 py-5 rounded-xl transition-colors shadow-lg"
+            >
+              <PhoneIconSmall />
+              Call Now — Free Estimate
+            </PhoneNumber>
+            <p className="text-xs text-ink-muted mt-2">{BUSINESS.phone} · Available 24 / 7 / 365</p>
           </div>
         </div>
       </section>
@@ -130,18 +133,14 @@ export default function HomePage() {
             ))}
           </div>
           <div className="text-center mt-8">
-            <Link
-              href="/services"
-              className="inline-flex items-center gap-2 text-primary font-semibold hover:text-primary-dark transition-colors"
-            >
-              View all services
-              <ChevronIcon />
+            <Link href="/services" className="inline-flex items-center gap-2 text-primary font-semibold hover:text-primary-dark transition-colors">
+              View all services <ChevronIcon />
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Why Force1 */}
+      {/* What happens when you call */}
       <section className="py-16 bg-surface" aria-labelledby="why-heading">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -171,42 +170,20 @@ export default function HomePage() {
                 ))}
               </ul>
               <div className="mt-8">
-                <Link
-                  href="/about"
-                  className="inline-flex items-center gap-2 text-primary font-semibold hover:text-primary-dark transition-colors"
-                >
-                  Learn more about Forces Water Damage DeBary
-                  <ChevronIcon />
+                <Link href="/about" className="inline-flex items-center gap-2 text-primary font-semibold hover:text-primary-dark transition-colors">
+                  Learn more about Forces Water Damage DeBary <ChevronIcon />
                 </Link>
               </div>
             </div>
 
             <div className="bg-white rounded-2xl border border-border p-8 shadow-[var(--shadow-card)]">
-              <h3 className="font-bold text-ink text-lg mb-6">
-                What happens when you call
-              </h3>
+              <h3 className="font-bold text-ink text-lg mb-6">What happens when you call</h3>
               <ol className="space-y-5">
                 {[
-                  {
-                    step: "1",
-                    title: "Immediate response",
-                    desc: "A live team member answers — not a voicemail. We dispatch a certified technician to your location right away.",
-                  },
-                  {
-                    step: "2",
-                    title: "Rapid damage assessment",
-                    desc: "We inspect the full scope with moisture meters and thermal imaging, then explain the situation in plain language.",
-                  },
-                  {
-                    step: "3",
-                    title: "Emergency mitigation",
-                    desc: "Water extraction, board-up, or other immediate steps begin the same day to stop further damage.",
-                  },
-                  {
-                    step: "4",
-                    title: "Full restoration",
-                    desc: "Structural drying, dehumidification, cleaning, and rebuilding — all documented for your insurance carrier.",
-                  },
+                  { step: "1", title: "Immediate response", desc: "A live team member answers — not a voicemail. We dispatch a certified technician to your location right away." },
+                  { step: "2", title: "Rapid damage assessment", desc: "We inspect the full scope with moisture meters and thermal imaging, then explain the situation in plain language." },
+                  { step: "3", title: "Emergency mitigation", desc: "Water extraction, board-up, or other immediate steps begin the same day to stop further damage." },
+                  { step: "4", title: "Full restoration", desc: "Structural drying, dehumidification, cleaning, and rebuilding — all documented for your insurance carrier." },
                 ].map((item) => (
                   <li key={item.step} className="flex gap-4">
                     <div className="flex-shrink-0 h-8 w-8 rounded-full bg-primary text-white font-bold text-sm flex items-center justify-center">
@@ -222,11 +199,12 @@ export default function HomePage() {
               <div className="mt-6 pt-6 border-t border-border">
                 <PhoneNumber
                   location="home-process-cta"
-                  className="flex items-center justify-center gap-2 w-full bg-accent hover:bg-accent-dark text-white font-bold py-3 rounded-lg transition-colors"
+                  className="cta-pulse flex items-center justify-center gap-2 w-full bg-accent hover:bg-accent-dark text-white font-bold py-4 rounded-lg transition-colors text-lg"
                 >
                   <PhoneIconSmall />
-                  Call {BUSINESS.phone}
+                  Call {BUSINESS.phone} — Free Estimate
                 </PhoneNumber>
+                <p className="text-center text-xs text-ink-muted mt-2">No voicemail · Real person answers</p>
               </div>
             </div>
           </div>
@@ -278,7 +256,6 @@ function ChevronIcon() {
     </svg>
   );
 }
-
 function CheckIcon() {
   return (
     <svg className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
@@ -286,20 +263,39 @@ function CheckIcon() {
     </svg>
   );
 }
-
 function PhoneIconSmall() {
   return (
-    <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+    <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
       <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
     </svg>
   );
 }
-
 function LocationIcon() {
   return (
     <svg className="h-4 w-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
       <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
       <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+    </svg>
+  );
+}
+function ClockIcon() {
+  return (
+    <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+    </svg>
+  );
+}
+function PhoneIconLg() {
+  return (
+    <svg className="h-8 w-8" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+      <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+    </svg>
+  );
+}
+function ShieldIcon() {
+  return (
+    <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
     </svg>
   );
 }

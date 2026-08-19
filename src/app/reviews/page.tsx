@@ -74,7 +74,6 @@ export default function ReviewsPage() {
         headline="What Our Customers Say"
         subheadline="Forces Water Damage DeBary is rated by homeowners and businesses in DeBary and Orange City, FL who've trusted us with their emergency restoration needs."
         ctaLocation="reviews-hero"
-        backgroundImage="/images/force1-restoration-service-truck-debary-fl.webp"
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">

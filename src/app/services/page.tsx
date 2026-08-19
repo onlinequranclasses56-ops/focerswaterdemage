@@ -33,7 +33,6 @@ export default function ServicesHubPage() {
         headline="Restoration Services in DeBary &amp; Orange City, FL"
         subheadline="Forces Water Damage DeBary provides IICRC-certified emergency and non-emergency restoration for water damage, mold, storm damage, and fire damage throughout Volusia County."
         ctaLocation="services-hub-hero"
-        backgroundImage="/images/water-damage-structural-drying-air-movers-florida.webp"
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">

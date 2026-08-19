@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { PhoneNumber } from "@/components/ui/PhoneNumber";
 import { BUSINESS, SERVICES, CITIES } from "@/lib/config";
 
@@ -8,9 +7,7 @@ export function Footer() {
 
   return (
     <footer className="bg-dark text-white" aria-labelledby="footer-heading">
-      <h2 id="footer-heading" className="sr-only">
-        Footer
-      </h2>
+      <h2 id="footer-heading" className="sr-only">Footer</h2>
 
       {/* Emergency CTA strip */}
       <div className="bg-accent">
@@ -20,12 +17,12 @@ export function Footer() {
               Water, fire, or storm damage? Don&apos;t wait.
             </p>
             <p className="text-white/80 text-sm">
-              IICRC-certified technicians available 24 hours a day, 7 days a week.
+              Free estimate · A real person answers every call · 24 / 7 / 365
             </p>
           </div>
           <PhoneNumber
             location="footer-emergency-strip"
-            className="inline-flex items-center gap-2 bg-white text-accent hover:bg-primary-50 font-bold px-6 py-3 rounded-lg transition-colors text-lg whitespace-nowrap"
+            className="inline-flex items-center gap-2 bg-white text-accent hover:bg-primary-50 font-extrabold px-8 py-4 rounded-xl transition-colors text-xl whitespace-nowrap"
           >
             <PhoneIcon />
             {BUSINESS.phone}
@@ -39,54 +36,46 @@ export function Footer() {
 
           {/* Company info + NAP */}
           <div className="sm:col-span-2 lg:col-span-1">
-            <Link href="/" aria-label="Forces Water Damage DeBary — home" className="inline-block mb-3">
-              <Image
-                src="/images/force1-restoration-logo.webp"
-                alt="Forces Water Damage DeBary"
-                width={56}
-                height={56}
-                className="h-12 w-auto object-contain bg-white rounded-lg p-1"
-              />
+            <Link href="/" aria-label="Forces Water Damage DeBary — home" className="inline-block mb-4">
+              <span className="block font-extrabold text-white text-xl leading-tight">Forces Water Damage</span>
+              <span className="block text-accent font-semibold text-sm uppercase tracking-widest">DeBary, FL</span>
             </Link>
-            <p className="font-bold text-xl text-white mb-1">{BUSINESS.name}</p>
-            <p className="text-white/60 text-sm mb-4">{BUSINESS.tagline}</p>
 
-            {/* NAP — matches schema and Google Business Profile exactly */}
+            {/* NAP */}
             <address className="not-italic text-sm text-white/80 space-y-1.5">
               <p>{BUSINESS.address.street}</p>
-              <p>
-                {BUSINESS.address.city}, {BUSINESS.address.state}{" "}
-                {BUSINESS.address.zip}
-              </p>
+              <p>{BUSINESS.address.city}, {BUSINESS.address.state} {BUSINESS.address.zip}</p>
               <PhoneNumber
                 location="footer-nap"
-                className="block font-semibold text-white hover:text-accent-50 transition-colors"
+                className="block font-bold text-white hover:text-accent transition-colors"
               />
-              <a
-                href={`mailto:${BUSINESS.email}`}
-                className="block text-white/60 hover:text-white transition-colors"
-              >
+              <a href={`mailto:${BUSINESS.email}`} className="block text-white/60 hover:text-white transition-colors">
                 {BUSINESS.email}
               </a>
             </address>
 
-            <p className="mt-4 text-xs text-white/50">
-              {BUSINESS.hours}
-            </p>
+            <p className="mt-4 text-xs text-white/50">{BUSINESS.hours}</p>
+
+            {/* Credentials */}
+            <div className="mt-5 flex flex-wrap gap-2">
+              {BUSINESS.certifications.map((cert) => (
+                <span key={cert} className="inline-flex items-center gap-1 bg-white/10 rounded px-2.5 py-1 text-xs font-medium text-white">
+                  <CheckIcon /> {cert}
+                </span>
+              ))}
+              <span className="inline-flex items-center gap-1 bg-white/10 rounded px-2.5 py-1 text-xs font-medium text-white">
+                <CheckIcon /> {BUSINESS.insurance}
+              </span>
+            </div>
           </div>
 
-          {/* Services links */}
+          {/* Services */}
           <div>
-            <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">
-              Our Services
-            </h3>
+            <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">Our Services</h3>
             <ul className="space-y-2">
               {SERVICES.map((service) => (
                 <li key={service.slug}>
-                  <Link
-                    href={`/services/${service.slug}`}
-                    className="text-sm text-white/70 hover:text-white transition-colors"
-                  >
+                  <Link href={`/services/${service.slug}`} className="text-sm text-white/70 hover:text-white transition-colors">
                     {service.name}
                   </Link>
                 </li>
@@ -94,35 +83,25 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Locations links */}
+          {/* Service Areas */}
           <div>
-            <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">
-              Service Areas
-            </h3>
+            <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">Service Areas</h3>
             <ul className="space-y-2">
               {CITIES.map((city) => (
                 <li key={city.slug}>
-                  <Link
-                    href={`/locations/${city.slug}`}
-                    className="text-sm text-white/70 hover:text-white transition-colors"
-                  >
+                  <Link href={`/locations/${city.slug}`} className="text-sm text-white/70 hover:text-white transition-colors">
                     {city.name}, {city.state}
                   </Link>
                 </li>
               ))}
             </ul>
 
-            <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4 mt-8">
-              Service + City
-            </h3>
+            <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4 mt-8">Service + City</h3>
             <ul className="space-y-2">
               {SERVICES.flatMap((service) =>
                 CITIES.map((city) => (
                   <li key={`${service.slug}-${city.slug}`}>
-                    <Link
-                      href={`/services/${service.slug}/${city.slug}`}
-                      className="text-xs text-white/50 hover:text-white/80 transition-colors"
-                    >
+                    <Link href={`/services/${service.slug}/${city.slug}`} className="text-xs text-white/50 hover:text-white/80 transition-colors">
                       {service.name} — {city.name}
                     </Link>
                   </li>
@@ -131,12 +110,10 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Company + credentials */}
+          {/* Company links */}
           <div>
-            <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">
-              Company
-            </h3>
-            <ul className="space-y-2 mb-8">
+            <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">Company</h3>
+            <ul className="space-y-2">
               {[
                 { label: "About Us", href: "/about" },
                 { label: "Reviews", href: "/reviews" },
@@ -145,37 +122,12 @@ export function Footer() {
                 { label: "Contact", href: "/contact" },
               ].map((link) => (
                 <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-white/70 hover:text-white transition-colors"
-                  >
+                  <Link href={link.href} className="text-sm text-white/70 hover:text-white transition-colors">
                     {link.label}
                   </Link>
                 </li>
               ))}
             </ul>
-
-            {/* Certifications */}
-            <div>
-              <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-3">
-                Credentials
-              </h3>
-              <div className="space-y-2">
-                {BUSINESS.certifications.map((cert) => (
-                  <div
-                    key={cert}
-                    className="inline-flex items-center gap-1.5 bg-white/10 rounded px-2.5 py-1 text-xs font-medium text-white"
-                  >
-                    <CheckIcon />
-                    {cert}
-                  </div>
-                ))}
-                <div className="inline-flex items-center gap-1.5 bg-white/10 rounded px-2.5 py-1 text-xs font-medium text-white ml-2">
-                  <CheckIcon />
-                  {BUSINESS.insurance}
-                </div>
-              </div>
-            </div>
           </div>
         </div>
 
@@ -192,10 +144,7 @@ export function Footer() {
                 { label: "Contact", href: "/contact" },
               ].map((link) => (
                 <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-xs text-white/40 hover:text-white/70 transition-colors"
-                  >
+                  <Link href={link.href} className="text-xs text-white/40 hover:text-white/70 transition-colors">
                     {link.label}
                   </Link>
                 </li>

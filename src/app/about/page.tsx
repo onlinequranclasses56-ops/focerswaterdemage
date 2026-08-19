@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { Hero } from "@/components/sections/Hero";
 import { CTASection } from "@/components/sections/CTASection";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
@@ -33,7 +32,6 @@ export default function AboutPage() {
         subheadline="IICRC-certified restoration professionals serving DeBary, Orange City, and surrounding Volusia County communities."
         ctaLocation="about-hero"
         secondaryCta={{ label: "Our Services", href: "/services" }}
-        backgroundImage="/images/force1-restoration-service-truck-debary-fl.webp"
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">
@@ -48,10 +46,6 @@ export default function AboutPage() {
               <h2 id="story-heading" className="text-2xl sm:text-3xl font-bold text-ink mb-6">
                 Our Story
               </h2>
-              {/*
-                PLACEHOLDER: Replace with real company history, founding story, and team background.
-                Include founding year, founder names, and specific differentiators.
-              */}
               <div className="space-y-5 text-ink-muted">
                 <p>
                   Forces Water Damage DeBary was founded with a straightforward mission: provide
@@ -74,14 +68,20 @@ export default function AboutPage() {
                 </p>
               </div>
             </div>
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-[var(--shadow-card)]">
-              <Image
-                src="/images/force1-restoration-service-truck-debary-fl.webp"
-                alt="Forces Water Damage DeBary service truck and equipment trailer at a job site in DeBary, FL — fully equipped for water damage, mold, storm, and fire restoration"
-                fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 50vw"
-              />
+            {/* Key stats — replaces photo until real images are available */}
+            <div className="grid grid-cols-2 gap-4">
+              {[
+                { stat: "24 / 7", label: "Emergency availability", sub: "Every day of the year" },
+                { stat: "IICRC", label: "Certified technicians", sub: "Industry gold standard" },
+                { stat: "< 60 min", label: "Dispatch target", sub: "Fastest in Volusia County" },
+                { stat: "Free", label: "Damage assessment", sub: "No obligation estimate" },
+              ].map((item) => (
+                <div key={item.stat} className="bg-surface rounded-xl border border-border p-5 text-center">
+                  <p className="text-2xl font-extrabold text-primary mb-1">{item.stat}</p>
+                  <p className="font-semibold text-ink text-sm">{item.label}</p>
+                  <p className="text-xs text-ink-muted mt-1">{item.sub}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -138,41 +138,17 @@ export default function AboutPage() {
             hands-on experience in water damage, mold remediation, storm damage, and fire
             damage restoration throughout Central Florida.
           </p>
-          <div className="grid sm:grid-cols-2 gap-6">
-            <div className="rounded-2xl overflow-hidden shadow-[var(--shadow-card)]">
-              <div className="relative aspect-[3/4]">
-                <Image
-                  src="/images/force1-technician-ppe-mold-remediation-florida.webp"
-                  alt="Forces Water Damage DeBary IICRC-certified technician in full protective equipment including respirator, hazmat suit, and gloves — prepared for mold remediation in Central Florida"
-                  fill
-                  className="object-cover object-top"
-                  sizes="(max-width: 640px) 100vw, 50vw"
-                />
-              </div>
-              <div className="bg-surface border-t border-border px-5 py-4">
-                <p className="font-semibold text-ink text-sm">IICRC-Certified Technician</p>
-                <p className="text-ink-muted text-xs mt-1">Full PPE protocol — mold remediation containment setup</p>
-              </div>
-            </div>
-            <div className="rounded-2xl overflow-hidden shadow-[var(--shadow-card)]">
-              <div className="relative aspect-[3/4]">
-                <Image
-                  src="/images/antimicrobial-treatment-mold-prevention-water-damage.webp"
-                  alt="Forces Water Damage DeBary technician applying EPA-registered antimicrobial treatment to exposed wall studs during water damage mold prevention protocol"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 640px) 100vw, 50vw"
-                />
-              </div>
-              <div className="bg-surface border-t border-border px-5 py-4">
-                <p className="font-semibold text-ink text-sm">Antimicrobial Treatment</p>
-                <p className="text-ink-muted text-xs mt-1">EPA-registered treatment applied to framing after water damage</p>
-              </div>
-            </div>
+          <div className="bg-surface rounded-2xl border border-dashed border-border p-8 text-center">
+            <p className="font-semibold text-ink mb-2">IICRC-Certified Field Team</p>
+            <p className="text-ink-muted text-sm max-w-md mx-auto">
+              Forces Water Damage DeBary is staffed by IICRC-certified restoration technicians with
+              hands-on experience in water damage, mold remediation, storm damage, and fire
+              damage restoration throughout Central Florida.
+            </p>
+            <p className="text-xs text-ink-light mt-4">
+              [TEAM_SECTION_PLACEHOLDER — Add real team member names, IICRC cert numbers, and individual bios.]
+            </p>
           </div>
-          <p className="text-xs text-ink-light mt-4 border border-dashed border-border rounded-lg p-3">
-            [TEAM_SECTION_PLACEHOLDER — Add real team member names, IICRC cert numbers, and individual bios. See PLACEHOLDERS.md.]
-          </p>
         </div>
       </section>
 

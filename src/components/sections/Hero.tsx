@@ -1,63 +1,29 @@
 import Link from "next/link";
-import Image from "next/image";
 import { PhoneNumber } from "@/components/ui/PhoneNumber";
 import { BUSINESS } from "@/lib/config";
 
 interface Props {
-  /** Main H1 headline */
   headline: string;
-  /** Supporting sub-headline */
   subheadline: string;
-  /** Analytics location label for phone click tracking */
   ctaLocation?: string;
-  /** Override the secondary CTA label and href */
   secondaryCta?: { label: string; href: string };
-  /** Extra trust line below CTAs */
   trustNote?: string;
-  /** Optional background photo — displayed behind a dark overlay */
-  backgroundImage?: string;
 }
 
 export function Hero({
   headline,
   subheadline,
   ctaLocation = "hero",
-  secondaryCta = { label: "Request a Free Assessment", href: "/contact" },
+  secondaryCta = { label: "Request Free Assessment", href: "/contact" },
   trustNote = "IICRC Certified · Licensed & Insured · DeBary & Orange City, FL",
-  backgroundImage,
 }: Props) {
   return (
     <section
       className="relative bg-primary overflow-hidden"
       aria-labelledby="hero-headline"
     >
-      {/* Background photo */}
-      {backgroundImage && (
-        <Image
-          src={backgroundImage}
-          alt=""
-          fill
-          className="object-cover object-center"
-          sizes="100vw"
-          priority
-        />
-      )}
-
-      {/* Overlay — heavier gradient when image is present so text stays readable */}
-      <div
-        className={`absolute inset-0 pointer-events-none ${
-          backgroundImage
-            ? "bg-gradient-to-r from-primary/95 via-primary/85 to-primary/60"
-            : ""
-        }`}
-        aria-hidden="true"
-      />
-
       {/* Decorative wave */}
-      <div
-        className={`absolute inset-0 pointer-events-none select-none ${backgroundImage ? "opacity-5" : "opacity-10"}`}
-        aria-hidden="true"
-      >
+      <div className="absolute inset-0 pointer-events-none select-none opacity-10" aria-hidden="true">
         <svg
           className="absolute bottom-0 left-0 w-full"
           viewBox="0 0 1440 320"
@@ -69,11 +35,12 @@ export function Hero({
         </svg>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-16 md:py-24 lg:py-32">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-16 md:py-24 lg:py-28">
         <div className="max-w-3xl">
-          <p className="inline-flex items-center gap-2 bg-white/10 text-white/90 text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-full mb-6">
-            <span className="h-1.5 w-1.5 rounded-full bg-accent inline-block" />
-            24/7 Emergency Response Available
+          {/* Emergency badge */}
+          <p className="inline-flex items-center gap-2 bg-accent text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full mb-6">
+            <span className="h-2 w-2 rounded-full bg-white animate-pulse inline-block" />
+            Emergency Response — Available Right Now
           </p>
 
           <h1
@@ -87,23 +54,28 @@ export function Hero({
             {subheadline}
           </p>
 
-          {/* CTAs */}
-          <div className="flex flex-col sm:flex-row gap-3 mb-8">
+          {/* Primary CTA */}
+          <div className="flex flex-col sm:flex-row gap-3 mb-3">
             <PhoneNumber
               location={ctaLocation}
-              className="cta-pulse inline-flex items-center justify-center gap-3 bg-accent hover:bg-accent-dark text-white font-bold text-lg px-8 py-4 rounded-xl transition-colors min-h-[56px]"
+              className="cta-pulse inline-flex items-center justify-center gap-3 bg-accent hover:bg-accent-dark text-white font-extrabold text-xl px-10 py-5 rounded-xl transition-colors min-h-[64px] shadow-lg"
             >
               <PhoneIcon />
-              Call {BUSINESS.phone}
+              {BUSINESS.phone}
             </PhoneNumber>
 
             <Link
               href={secondaryCta.href}
-              className="inline-flex items-center justify-center gap-2 border-2 border-white/40 text-white hover:bg-white/10 font-semibold text-base px-6 py-4 rounded-xl transition-colors min-h-[56px]"
+              className="inline-flex items-center justify-center gap-2 border-2 border-white/40 text-white hover:bg-white/10 font-semibold text-base px-6 py-4 rounded-xl transition-colors min-h-[64px]"
             >
               {secondaryCta.label}
             </Link>
           </div>
+
+          {/* No-friction sublabels */}
+          <p className="text-sm text-white/50 mb-6">
+            Free estimate · No voicemail · A real person answers every call
+          </p>
 
           {/* Trust line */}
           {trustNote && (
@@ -119,7 +91,7 @@ export function Hero({
 
 function PhoneIcon() {
   return (
-    <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+    <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
       <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
     </svg>
   );

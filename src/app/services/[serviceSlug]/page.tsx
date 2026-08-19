@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import Image from "next/image";
 import { Hero } from "@/components/sections/Hero";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { CTASection } from "@/components/sections/CTASection";
@@ -11,43 +10,6 @@ import { ServiceSchema } from "@/components/schema/ServiceSchema";
 import { PhoneNumber } from "@/components/ui/PhoneNumber";
 import { BUSINESS, SERVICES, CITIES, getService } from "@/lib/config";
 import type { FAQ } from "@/types";
-
-/* ------------------------------------------------------------------ */
-/* Service images — real job-site photos matched to each service        */
-/* ------------------------------------------------------------------ */
-
-type ServiceImage = { src: string; alt: string };
-
-const SERVICE_IMAGES: Record<string, ServiceImage[]> = {
-  "water-damage-restoration": [
-    {
-      src: "/images/water-damage-structural-drying-air-movers-florida.webp",
-      alt: "Industrial air movers and commercial Syclone dehumidifier actively drying a water-damaged structure in Central Florida — Forces Water Damage DeBary",
-    },
-  ],
-  "mold-remediation": [
-    {
-      src: "/images/force1-technician-ppe-mold-remediation-florida.webp",
-      alt: "Forces Water Damage DeBary IICRC-certified technician in full PPE — respirator, hazmat suit, and gloves — prepared for mold remediation",
-    },
-    {
-      src: "/images/antimicrobial-treatment-mold-prevention-water-damage.webp",
-      alt: "Technician applying EPA-registered antimicrobial spray to exposed wall studs during mold prevention treatment in a Florida home",
-    },
-  ],
-  "storm-damage-restoration": [
-    {
-      src: "/images/force1-restoration-service-truck-debary-fl.webp",
-      alt: "Forces Water Damage DeBary service truck and equipment trailer staged for emergency storm damage response in DeBary, FL",
-    },
-  ],
-  "fire-damage-restoration": [
-    {
-      src: "/images/force1-restoration-service-truck-debary-fl.webp",
-      alt: "Forces Water Damage DeBary service truck dispatched for emergency fire damage restoration in Volusia County, FL",
-    },
-  ],
-};
 
 /* ------------------------------------------------------------------ */
 /* Service-specific content                                              */
@@ -289,7 +251,6 @@ export default async function ServicePage({ params }: Props) {
         headline={`${service.name} in DeBary &amp; Orange City, FL`}
         subheadline={service.shortDescription}
         ctaLocation={`service-${service.slug}-hero`}
-        backgroundImage={SERVICE_IMAGES[serviceSlug]?.[0]?.src}
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">
@@ -308,26 +269,6 @@ export default async function ServicePage({ params }: Props) {
         </div>
       </section>
 
-      {/* Service photos */}
-      {SERVICE_IMAGES[serviceSlug] && (
-        <section className="bg-white pb-10" aria-label={`${service.name} photos`}>
-          <div className="max-w-5xl mx-auto px-4 sm:px-6">
-            <div className={`grid gap-4 ${SERVICE_IMAGES[serviceSlug].length > 1 ? "sm:grid-cols-2" : "grid-cols-1"}`}>
-              {SERVICE_IMAGES[serviceSlug].map((img) => (
-                <div key={img.src} className="relative aspect-video rounded-2xl overflow-hidden shadow-[var(--shadow-card)]">
-                  <Image
-                    src={img.src}
-                    alt={img.alt}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 640px"
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
 
       {/* Process */}
       <section className="py-14 bg-white" aria-labelledby={`${serviceSlug}-process`}>
