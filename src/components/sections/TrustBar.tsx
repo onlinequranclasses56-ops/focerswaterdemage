@@ -1,3 +1,4 @@
+import { PhoneNumber } from "@/components/ui/PhoneNumber";
 import { BUSINESS } from "@/lib/config";
 
 const TRUST_ITEMS = [
@@ -44,6 +45,14 @@ interface Props {
   variant?: "light" | "dark";
 }
 
+function PhoneIcon() {
+  return (
+    <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+      <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+    </svg>
+  );
+}
+
 export function TrustBar({ variant = "light" }: Props) {
   const bgClass = variant === "dark" ? "bg-dark" : "bg-surface";
   const textClass = variant === "dark" ? "text-white" : "text-ink";
@@ -53,7 +62,7 @@ export function TrustBar({ variant = "light" }: Props) {
   return (
     <section className={`${bgClass} py-8 border-b border-border`} aria-label="Trust signals">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 mb-6">
           {TRUST_ITEMS.map((item) => (
             <div key={item.label} className="flex flex-col sm:flex-row items-start sm:items-center gap-3">
               <div className={`${iconClass} flex-shrink-0`}>{item.icon}</div>
@@ -63,6 +72,19 @@ export function TrustBar({ variant = "light" }: Props) {
               </div>
             </div>
           ))}
+        </div>
+        {/* Phone CTA bar — converts trust into action */}
+        <div className="border-t border-border pt-5 text-center">
+          <p className={`text-xs font-semibold uppercase tracking-widest ${subClass} mb-2`}>
+            Need emergency service right now?
+          </p>
+          <PhoneNumber
+            location="trustbar"
+            className="cta-pulse inline-flex items-center gap-2 bg-accent hover:bg-accent-dark text-white font-extrabold text-lg px-8 py-3 rounded-xl transition-colors"
+          >
+            <PhoneIcon />
+            {BUSINESS.phone} — Call Free
+          </PhoneNumber>
         </div>
       </div>
     </section>

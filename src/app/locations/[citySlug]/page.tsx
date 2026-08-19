@@ -129,7 +129,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const city = getCity(citySlug);
   if (!city) return {};
 
-  const title = `Restoration Services in ${city.name}, FL`;
+  const title = `Water Damage Repair & Restoration in ${city.name}, FL`;
   const canonical = `${BUSINESS.siteUrl}/locations/${city.slug}`;
 
   return {

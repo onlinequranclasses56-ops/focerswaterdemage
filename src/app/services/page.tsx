@@ -8,13 +8,13 @@ import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
 import { BUSINESS, SERVICES, CITIES } from "@/lib/config";
 
 export const metadata: Metadata = {
-  title: "Restoration Services in DeBary & Orange City, FL",
+  title: "Call (864) 734-5702 | Restoration Services DeBary FL | Forces Water Damage DeBary",
   description:
-    "Forces Water Damage DeBary provides water damage, mold remediation, storm damage, and fire damage restoration services in DeBary and Orange City, FL. IICRC Certified. Call (864) 734-5702.",
+    "Call (864) 734-5702 — water damage, mold remediation, storm & fire damage restoration in DeBary & Orange City, FL. IICRC Certified. 24/7 emergency response. Free estimate.",
   alternates: { canonical: `${BUSINESS.siteUrl}/services` },
   openGraph: {
-    title: "Restoration Services | Forces Water Damage DeBary — DeBary & Orange City, FL",
-    description: "Full-service restoration: water damage, mold, storm damage, and fire damage. IICRC certified. Available 24/7.",
+    title: "Call (864) 734-5702 | Restoration Services | Forces Water Damage DeBary",
+    description: "Call (864) 734-5702 — water damage, mold, storm & fire restoration. IICRC certified. 24/7 in DeBary & Orange City, FL.",
     url: `${BUSINESS.siteUrl}/services`,
   },
 };

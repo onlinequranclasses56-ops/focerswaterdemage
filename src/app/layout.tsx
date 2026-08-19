@@ -17,11 +17,11 @@ const geistSans = Geist({
 
 export const metadata: Metadata = {
   title: {
-    default: `${BUSINESS.name} — 24/7 Restoration in DeBary & Orange City, FL`,
-    template: `%s | ${BUSINESS.name}`,
+    default: `Call (864) 734-5702 — Forces Water Damage DeBary | 24/7 DeBary & Orange City FL`,
+    template: `%s — Call (864) 734-5702 | Forces Water Damage DeBary`,
   },
   description:
-    "Forces Water Damage DeBary provides 24/7 water damage restoration, mold remediation, storm damage restoration, and fire damage restoration in DeBary and Orange City, FL. IICRC Certified. Call (864) 734-5702.",
+    "Call (864) 734-5702 — Forces Water Damage DeBary. 24/7 water damage, mold remediation, storm & fire restoration in DeBary and Orange City, FL. IICRC Certified. Free estimate.",
   metadataBase: new URL(BUSINESS.siteUrl),
   alternates: { canonical: BUSINESS.siteUrl },
   icons: {

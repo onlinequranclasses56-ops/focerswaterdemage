@@ -23,7 +23,7 @@ export default function PrivacyPolicyPage() {
       <header className="bg-surface border-b border-border py-10">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h1 className="text-2xl sm:text-3xl font-bold text-ink">Privacy Policy</h1>
-          <p className="text-ink-muted text-sm mt-2">Last updated: [DATE_PLACEHOLDER]</p>
+          <p className="text-ink-muted text-sm mt-2">Last updated: August 2026</p>
         </div>
       </header>
 
@@ -48,7 +48,7 @@ export default function PrivacyPolicyPage() {
 
           <p>
             {BUSINESS.name} (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;)
-            operates [DOMAIN].com (the &ldquo;Site&rdquo;). This Privacy Policy describes
+            operates force1waterdamagefl.com (the &ldquo;Site&rdquo;). This Privacy Policy describes
             how we collect, use, and share information when you use our Site or contact us.
           </p>
 

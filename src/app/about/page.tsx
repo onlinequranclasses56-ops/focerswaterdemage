@@ -6,13 +6,13 @@ import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
 import { BUSINESS, SERVICES, CITIES } from "@/lib/config";
 
 export const metadata: Metadata = {
-  title: "About Forces Water Damage DeBary — DeBary & Orange City, FL",
+  title: "About Forces Water Damage DeBary — Call (864) 734-5702 | DeBary & Orange City, FL",
   description:
-    "Learn about Forces Water Damage DeBary — IICRC-certified water damage, mold, storm, and fire restoration serving DeBary and Orange City, FL. Our story, credentials, and commitment to Volusia County.",
+    "Call (864) 734-5702 — Forces Water Damage DeBary. IICRC-certified restoration in DeBary & Orange City, FL. 24/7 emergency response, free estimates, fully licensed & insured.",
   alternates: { canonical: `${BUSINESS.siteUrl}/about` },
   openGraph: {
-    title: "About Forces Water Damage DeBary | DeBary & Orange City, FL",
-    description: "IICRC-certified restoration company serving DeBary and Orange City, FL. Our story, credentials, and team.",
+    title: "About Forces Water Damage DeBary | Call (864) 734-5702",
+    description: "Call (864) 734-5702 — IICRC-certified restoration in DeBary & Orange City, FL. Our story, credentials, and team.",
     url: `${BUSINESS.siteUrl}/about`,
   },
 };

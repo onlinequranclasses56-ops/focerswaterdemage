@@ -17,6 +17,8 @@ import type { FAQ } from "@/types";
 type ComboContent = {
   headline: string;
   subheadline: string;
+  seoTitle: string;
+  seoDescription: string;
   answerFirst: string;
   bodyParagraphs: string[];
   localFactors: { title: string; desc: string }[];
@@ -32,9 +34,11 @@ const COMBO_CONTENT: Record<ComboKey, ComboContent> = {
   /* WATER DAMAGE × DEBARY                                         */
   /* ============================================================ */
   [key("water-damage-restoration", "debary")]: {
-    headline: "Water Damage Restoration in DeBary, FL",
+    headline: "Water Damage Repair & Restoration in DeBary, FL",
     subheadline:
-      "Forces Water Damage DeBary responds immediately to water damage events in DeBary. IICRC-certified extraction, structural drying, and full restoration — available 24/7.",
+      "Forces Water Damage DeBary responds immediately to water damage events in DeBary. IICRC-certified extraction, structural drying, and full repair & restoration — available 24/7.",
+    seoTitle: "Water Damage Repair & Restoration in DeBary, FL",
+    seoDescription: "Call (864) 734-5702 — water damage repair & restoration in DeBary, FL. 24/7 emergency extraction & structural drying. IICRC-certified. Under 60-min response. Free estimate. Forces Water Damage DeBary.",
     answerFirst:
       "Water damage restoration in DeBary, FL involves unique challenges not present in inland communities. Forces Water Damage DeBary's proximity to the St. Johns River corridor means our technicians regularly handle both Category 1 clean water events (burst pipes, appliance failures) and Category 2–3 events associated with river backflow, storm surge, and area flooding. Forces Water Damage DeBary is headquartered in DeBary, providing the fastest on-site response time in the area.",
     bodyParagraphs: [
@@ -47,13 +51,14 @@ const COMBO_CONTENT: Record<ComboKey, ComboContent> = {
       { title: "St. Johns River proximity", desc: "Properties within the river corridor face repeated flood exposure and elevated ambient moisture — both elevate drying difficulty and mold risk compared to DeBary properties further inland." },
       { title: "High water table", desc: "DeBary's near-river water table limits groundwater dissipation rates, requiring longer mechanical drying cycles and more equipment than typical inland jobs." },
       { title: "Tropical weather exposure", desc: "Volusia County's storm track brings regular tropical rainfall and named storms that can overwhelm drainage infrastructure in DeBary's lower-elevation neighborhoods." },
-      { title: "Force1 home base", desc: "DeBary is Forces Water Damage DeBary's headquarters — our fastest response area in Volusia County. We are already nearby when you call." },
+      { title: "Our DeBary Home Base", desc: "DeBary is Forces Water Damage DeBary's headquarters — our fastest response area in Volusia County. We are already nearby when you call." },
     ],
     faqs: [
       { question: "Why is water damage restoration different near the St. Johns River?", answer: "Properties near the St. Johns River have a higher ambient water table, which means groundwater pressure against foundations and slabs during heavy rain or flood events. This slows the natural dissipation of moisture and requires more mechanical drying capacity than comparable jobs in inland areas. Forces Water Damage DeBary accounts for these conditions in equipment selection and placement." },
       { question: "Does flood damage from the St. Johns River require a different restoration approach?", answer: "Yes. River backflow flooding typically produces Category 2 or Category 3 water depending on what the river carries — which requires more intensive extraction, antimicrobial treatment, and in some cases removal of flooring and lower wall materials that cannot be safely dried in place. Forces Water Damage DeBary assesses the water category at every job and applies the appropriate IICRC protocol." },
       { question: "How quickly can Forces Water Damage DeBary respond to water damage in DeBary?", answer: "As Forces Water Damage DeBary's home base, DeBary receives our fastest emergency response times. Our technicians are typically deployed from DeBary, which minimizes travel time. We answer calls 24/7 and dispatch immediately — the sooner extraction begins, the lower the total damage and restoration cost." },
       { question: "Can water damage behind walls in DeBary homes cause mold?", answer: "Yes — and Florida's warm, humid climate accelerates the timeline significantly. Mold can begin growing within 24 to 48 hours of water exposure behind drywall, under flooring, or within wall cavities. Forces Water Damage DeBary's water damage process includes moisture monitoring inside wall assemblies to confirm complete drying before closing any work area." },
+      { question: "Who provides water damage repair near me in DeBary, FL?", answer: "Forces Water Damage DeBary is headquartered in DeBary, FL and provides the fastest water damage repair and restoration response in the area. We are already nearby when you call. Call (864) 734-5702 — a real person answers 24/7 and we dispatch immediately." },
     ],
   },
 
@@ -61,9 +66,11 @@ const COMBO_CONTENT: Record<ComboKey, ComboContent> = {
   /* WATER DAMAGE × ORANGE CITY                                    */
   /* ============================================================ */
   [key("water-damage-restoration", "orange-city")]: {
-    headline: "Water Damage Restoration in Orange City, FL",
+    headline: "Water Damage Repair & Restoration in Orange City, FL",
     subheadline:
-      "Forces Water Damage DeBary provides 24/7 water damage restoration in Orange City, FL. IICRC-certified technicians, industrial extraction and drying equipment, full insurance documentation.",
+      "Forces Water Damage DeBary provides 24/7 water damage repair & restoration in Orange City, FL. IICRC-certified technicians, industrial extraction and drying equipment, full insurance documentation.",
+    seoTitle: "Water Damage Repair & Restoration in Orange City, FL",
+    seoDescription: "Call (864) 734-5702 — water damage repair & restoration in Orange City, FL. 24/7 emergency extraction & structural drying. IICRC-certified. Free estimate. Forces Water Damage DeBary.",
     answerFirst:
       "Water damage restoration in Orange City, FL addresses a range of scenarios common to Central Florida's inland communities — from supply line failures and appliance leaks to heavy tropical rainfall and roof intrusion. Forces Water Damage DeBary serves Orange City from our Volusia County base, providing rapid emergency response and IICRC-certified extraction and structural drying for homes and businesses throughout the area.",
     bodyParagraphs: [
@@ -93,6 +100,8 @@ const COMBO_CONTENT: Record<ComboKey, ComboContent> = {
     headline: "Mold Remediation in DeBary, FL",
     subheadline:
       "Forces Water Damage DeBary provides IICRC-certified mold inspection, containment, and remediation in DeBary, FL. We address the moisture source, remove mold safely, and verify clearance.",
+    seoTitle: "Mold Remediation & Cleanup in DeBary, FL",
+    seoDescription: "Call (864) 734-5702 — mold remediation in DeBary, FL. IICRC-certified inspection, containment & safe removal. Post-remediation verification. Free estimate. Forces Water Damage DeBary.",
     answerFirst:
       "Mold remediation in DeBary, FL is particularly challenging because of the city's St. Johns River proximity, which creates a persistently elevated ambient humidity level throughout the year. When water damage occurs — from river flooding, roof intrusion, plumbing failures, or any other source — the warm, moist conditions in DeBary accelerate mold colonization significantly. Forces Water Damage DeBary provides IICRC S520-compliant mold remediation for DeBary homes and businesses, starting with moisture source identification and ending with post-remediation verification testing.",
     bodyParagraphs: [
@@ -122,6 +131,8 @@ const COMBO_CONTENT: Record<ComboKey, ComboContent> = {
     headline: "Mold Remediation in Orange City, FL",
     subheadline:
       "Forces Water Damage DeBary provides professional mold inspection, containment, and safe removal in Orange City, FL. IICRC-certified. We identify the source, remediate completely, and verify clearance.",
+    seoTitle: "Mold Remediation & Cleanup in Orange City, FL",
+    seoDescription: "Call (864) 734-5702 — mold remediation in Orange City, FL. IICRC-certified inspection, containment & removal. 24/7 emergency mold response. Free estimate. Forces Water Damage DeBary.",
     answerFirst:
       "Mold remediation in Orange City, FL addresses mold growth in a range of residential and commercial property types — from established single-family homes to multi-unit housing and commercial spaces along the US 17-92 corridor. Forces Water Damage DeBary serves Orange City with IICRC S520-compliant mold remediation, establishing proper containment, applying professional-grade removal protocols, and confirming successful clearance with post-remediation verification.",
     bodyParagraphs: [
@@ -148,28 +159,31 @@ const COMBO_CONTENT: Record<ComboKey, ComboContent> = {
   /* STORM DAMAGE × DEBARY                                         */
   /* ============================================================ */
   [key("storm-damage-restoration", "debary")]: {
-    headline: "Storm Damage Restoration in DeBary, FL",
+    headline: "Storm Damage Repair & Restoration in DeBary, FL",
     subheadline:
-      "Forces Water Damage DeBary responds immediately to storm damage in DeBary, FL. Emergency tarping, water extraction, full structural restoration — available 24/7 after hurricanes, tropical storms, and severe weather.",
+      "Forces Water Damage DeBary responds immediately to storm damage repair in DeBary, FL. Emergency tarping, water extraction, hail damage, full structural restoration — available 24/7 after hurricanes, tropical storms, and severe weather.",
+    seoTitle: "Storm Damage Repair in DeBary, FL",
+    seoDescription: "Call (864) 734-5702 — storm damage repair in DeBary, FL. 24/7 emergency response. Wind, hail, flooding & roof damage. IICRC-certified. Free estimate. Forces Water Damage DeBary.",
     answerFirst:
-      "Storm damage restoration in DeBary, FL frequently involves the combination of wind damage, roof intrusion, and river-related flooding that occurs when tropical systems move through Volusia County. DeBary's position along the St. Johns River makes it particularly susceptible to flooding during prolonged rainfall and named storm events, while the city's mature tree canopy — one of its defining characteristics — creates significant risk of structural roof and wall damage from downed trees. Forces Water Damage DeBary's home base in DeBary enables the fastest emergency response in the area.",
+      "Storm damage repair and restoration in DeBary, FL frequently involves the combination of wind damage, hail damage, roof intrusion, and river-related flooding that occurs when tropical systems move through Volusia County. DeBary's position along the St. Johns River makes it particularly susceptible to flooding during prolonged rainfall and named storm events, while the city's mature tree canopy — one of its defining characteristics — creates significant risk of structural roof and wall damage from downed trees. Forces Water Damage DeBary's home base in DeBary enables the fastest emergency storm damage repair response in the area.",
     bodyParagraphs: [
-      "When a hurricane or tropical storm impacts Volusia County, DeBary homeowners face multiple simultaneous damage mechanisms. Wind-driven rain penetrates compromised roof systems and window seals. Storm surge can inundate the St. Johns River corridor, reaching properties that have never previously flooded. And the city's large live oaks and slash pines — trees that define DeBary's landscape — can fall onto structures during high-wind events, causing sudden major damage that requires immediate emergency securing.",
-      "Forces Water Damage DeBary's storm damage response in DeBary begins with emergency measures that stop ongoing damage: roof tarping prevents additional rain intrusion through compromised rooflines; board-up secures broken windows and doors; and debris removal from structural contact points is completed before detailed assessment and water extraction begins.",
+      "When a hurricane or tropical storm impacts Volusia County, DeBary homeowners face multiple simultaneous damage mechanisms. Wind-driven rain penetrates compromised roof systems and window seals. Hail storms can puncture roofing materials and damage gutters, siding, and AC units. Storm surge can inundate the St. Johns River corridor, reaching properties that have never previously flooded. And the city's large live oaks and slash pines — trees that define DeBary's landscape — can fall onto structures during high-wind events, causing sudden major damage that requires immediate emergency storm repair.",
+      "Forces Water Damage DeBary's storm damage repair response in DeBary begins with emergency measures that stop ongoing damage: roof tarping prevents additional rain intrusion through compromised rooflines; board-up secures broken windows and doors; and debris removal from structural contact points is completed before detailed assessment and water extraction begins.",
       "Water extraction after a DeBary storm event must account for the category of water involved. Rainwater entering through a roof penetration is Category 1 (clean water). St. Johns River backflow flooding, which carries sediment, organic material, and potential sewage, is Category 3 (blackwater) and requires more intensive treatment protocols including removal of flood-contacted materials that cannot be safely dried in place. Forces Water Damage DeBary identifies the water category at every job and applies the correct IICRC-prescribed approach.",
       "Insurance documentation is critical after storm damage in DeBary, particularly given the complexity of distinguishing between windstorm damage (covered by standard homeowners policies) and flood damage (requiring separate NFIP or private flood insurance). Forces Water Damage DeBary photographs and documents every aspect of the damage from the first hour on-site, providing comprehensive records that support your claim with each relevant carrier.",
     ],
     localFactors: [
-      { title: "St. Johns River flood zone exposure", desc: "DeBary river-corridor properties face storm surge and extended flooding during tropical systems — often producing Category 3 blackwater that requires intensive remediation." },
-      { title: "Mature tree canopy risk", desc: "DeBary's large live oaks and pines create high roof and structural damage risk during high-wind events — tree debris removal and emergency tarping are frequent storm response steps." },
-      { title: "Multiple simultaneous damage types", desc: "DeBary storm events often combine wind damage, rain intrusion, and river flooding simultaneously — requiring coordination of multiple restoration disciplines." },
-      { title: "Immediate local response", desc: "Forces Water Damage DeBary's DeBary base provides the shortest dispatch time in the area for post-storm emergency response." },
+      { title: "St. Johns River flood zone exposure", desc: "DeBary river-corridor properties face storm surge and extended flooding during tropical systems — often producing Category 3 blackwater that requires intensive remediation and repair." },
+      { title: "Hail & wind damage", desc: "Volusia County storms regularly produce hail that damages roofing, gutters, siding, and AC units — requiring prompt storm damage repair to prevent secondary water intrusion." },
+      { title: "Mature tree canopy risk", desc: "DeBary's large live oaks and pines create high roof and structural damage risk during high-wind events — tree debris removal and emergency tarping are frequent storm repair steps." },
+      { title: "Immediate local response", desc: "Forces Water Damage DeBary's DeBary base provides the shortest storm damage repair dispatch time in Volusia County — we answer calls 24/7." },
     ],
     faqs: [
-      { question: "What should I do immediately after storm damage to my DeBary home?", answer: "First ensure your household's safety — do not enter areas with structural instability, gas smells, or electrical hazards. Once safe, call Forces Water Damage DeBary at (864) 734-5702 for immediate emergency response. Document visible damage with your own photographs if safe to do so, but do not begin discarding damaged materials before our team has documented the loss for your insurance claim." },
+      { question: "What should I do immediately after storm damage to my DeBary home?", answer: "First ensure your household's safety — do not enter areas with structural instability, gas smells, or electrical hazards. Once safe, call Forces Water Damage DeBary at (864) 734-5702 for immediate emergency storm damage repair. Document visible damage with your own photographs if safe to do so, but do not begin discarding damaged materials before our team has documented the loss for your insurance claim." },
+      { question: "Does hail damage in DeBary require professional repair?", answer: "Yes. Hail can puncture or crack roofing materials, damage gutters and siding, and dent AC units — damage that may not be immediately visible but leads to water intrusion and further structural damage over time. Forces Water Damage DeBary assesses hail damage thoroughly and documents every impact point for your homeowners insurance claim." },
       { question: "Does storm damage in DeBary near the St. Johns River require special handling?", answer: "Yes. River-adjacent flooding from tropical events typically involves Category 3 blackwater — which requires removal of flood-contacted flooring, lower wall materials, and insulation rather than simply drying them in place. This is more intensive and more costly than clean water damage, but it is the safe and correct approach per IICRC standards." },
-      { question: "Can Forces Water Damage DeBary repair my roof after a DeBary storm?", answer: "Yes. Emergency roof tarping is provided immediately to stop ongoing water intrusion. Full roof repair and replacement is part of our complete storm restoration service in DeBary. Handling everything from emergency tarping through final reconstruction means you only need one point of contact throughout the restoration process." },
-      { question: "How long does storm damage restoration take in DeBary?", answer: "Timeline varies significantly with scope. Emergency mitigation (tarping, extraction, securing the structure) is completed within the first day or two. Structural drying typically takes 3–5 days. Full reconstruction — depending on the extent of structural damage — can range from one week to several months for major losses. Forces Water Damage DeBary provides timeline estimates after the initial damage assessment." },
+      { question: "Can Forces Water Damage DeBary repair my roof after a DeBary storm?", answer: "Yes. Emergency roof tarping is provided immediately to stop ongoing water intrusion. Full roof repair and replacement is part of our complete storm restoration service in DeBary. Handling everything from emergency tarping through final reconstruction means you only need one point of contact throughout the repair and restoration process." },
+      { question: "Who does storm damage repair near me in DeBary, FL?", answer: "Forces Water Damage DeBary is headquartered in DeBary, FL and provides the fastest storm damage repair response in Volusia County. We are already nearby when you call. Dial (864) 734-5702 — a live team member answers 24/7 and we dispatch immediately." },
     ],
   },
 
@@ -177,27 +191,29 @@ const COMBO_CONTENT: Record<ComboKey, ComboContent> = {
   /* STORM DAMAGE × ORANGE CITY                                    */
   /* ============================================================ */
   [key("storm-damage-restoration", "orange-city")]: {
-    headline: "Storm Damage Restoration in Orange City, FL",
+    headline: "Storm Damage Repair & Restoration in Orange City, FL",
     subheadline:
-      "Forces Water Damage DeBary provides 24/7 storm damage restoration in Orange City, FL — hurricane response, wind damage, rain intrusion, and flooding. IICRC-certified, full insurance documentation.",
+      "Forces Water Damage DeBary provides 24/7 storm damage repair in Orange City, FL — hurricane response, wind damage, hail damage, rain intrusion, and flooding. IICRC-certified, full insurance documentation.",
+    seoTitle: "Storm Damage Repair in Orange City, FL",
+    seoDescription: "Call (864) 734-5702 — storm damage repair in Orange City, FL. 24/7 emergency response. Hurricane, wind, hail & flood damage. IICRC-certified. Free estimate. Forces Water Damage DeBary.",
     answerFirst:
-      "Storm damage restoration in Orange City, FL addresses the distinct weather hazards of Central Florida's inland communities — primarily severe thunderstorm wind damage, tornado risk, heavy rainfall flooding, and the water intrusion that follows any breach in a structure's building envelope. Forces Water Damage DeBary responds to storm damage events in Orange City 24 hours a day, providing emergency securing, water extraction, drying, and full structural restoration.",
+      "Storm damage repair and restoration in Orange City, FL addresses the distinct weather hazards of Central Florida's inland communities — primarily severe thunderstorm wind damage, hail damage, tornado risk, heavy rainfall flooding, and the water intrusion that follows any breach in a structure's building envelope. Forces Water Damage DeBary responds to storm damage repair calls in Orange City 24 hours a day, providing emergency securing, water extraction, drying, and full structural restoration.",
     bodyParagraphs: [
-      "Orange City sits in the Central Florida corridor that experiences a high frequency of severe thunderstorm events, particularly during the June–November storm season. These storms can produce wind gusts strong enough to damage roofing systems, bring down utility poles and trees, and introduce significant volumes of water through roof penetrations in a very short time. The speed of the damage and the intensity of localized cell events means Orange City properties can suffer substantial storm damage with little warning.",
+      "Orange City sits in the Central Florida corridor that experiences a high frequency of severe thunderstorm events, particularly during the June–November storm season. These storms can produce wind gusts strong enough to damage roofing systems, hail that punctures shingles and damages gutters, and significant volumes of water through roof penetrations in a very short time. The speed of the damage and the intensity of localized cell events means Orange City properties can suffer substantial storm damage requiring professional repair with little warning.",
       "Central Florida also falls within a region of elevated tornado risk — not the highest-risk area nationally, but a location where waterspout tornadoes from nearby coastal waters occasionally track inland, and where supercell thunderstorms can produce brief but damaging tornado touchdowns. Orange City commercial and residential properties can sustain wind damage from tornado events that is distinct from standard tropical storm wind damage in the scope and pattern of structural impact.",
-      "Orange City's commercial corridor along US 17-92 presents specific storm restoration challenges: commercial roofing systems (flat or low-slope) are more vulnerable to pooling water and wind-driven rain than steep residential roofs; multi-tenant buildings require careful coordination to minimize disruption to non-affected tenants during restoration; and commercial insurance documentation requirements often differ from residential claims.",
-      "Forces Water Damage DeBary handles storm damage insurance claims in Orange City by beginning documentation from the moment we arrive. Every structural impact, every moisture reading, and the full scope of damage is photographed and written up in detail. We work alongside your insurance adjuster and can communicate directly with your carrier about restoration scope and timeline.",
+      "Orange City's commercial corridor along US 17-92 presents specific storm repair challenges: commercial roofing systems (flat or low-slope) are more vulnerable to pooling water and wind-driven rain than steep residential roofs; multi-tenant buildings require careful coordination to minimize disruption to non-affected tenants during restoration; and commercial insurance documentation requirements often differ from residential claims.",
+      "Forces Water Damage DeBary handles storm damage insurance claims in Orange City by beginning documentation from the moment we arrive. Every structural impact, every moisture reading, and the full scope of damage is photographed and written up in detail. We work alongside your insurance adjuster and can communicate directly with your carrier about repair scope and timeline.",
     ],
     localFactors: [
-      { title: "Severe thunderstorm frequency", desc: "Orange City's inland location in the Central Florida storm corridor means frequent severe cells with high winds and heavy rain that can cause sudden structural damage." },
+      { title: "Severe thunderstorm & hail frequency", desc: "Orange City's Central Florida location means frequent severe storm cells with high winds, hail, and heavy rain that can cause sudden structural damage requiring immediate repair." },
       { title: "Tornado exposure", desc: "Central Florida experiences occasional tornado events — particularly inland-tracking waterspouts — that can cause concentrated structural damage in Orange City commercial and residential areas." },
-      { title: "Commercial roofing vulnerability", desc: "Orange City's commercial corridor includes flat and low-slope roofing systems that are particularly vulnerable to wind-driven rain and storm water pooling." },
-      { title: "Fast Volusia County response", desc: "Forces Water Damage DeBary responds to storm damage events in Orange City from our nearby DeBary base — available 24/7 throughout the storm season." },
+      { title: "Commercial roofing vulnerability", desc: "Orange City's commercial corridor includes flat and low-slope roofing systems that are particularly vulnerable to wind-driven rain, hail, and storm water pooling." },
+      { title: "Fast Volusia County response", desc: "Forces Water Damage DeBary responds to storm damage repair calls in Orange City from our nearby DeBary base — available 24/7 throughout the storm season." },
     ],
     faqs: [
-      { question: "What storm damage does Forces Water Damage DeBary handle in Orange City?", answer: "Forces Water Damage DeBary handles all phases of storm damage restoration in Orange City: emergency securing (tarping, board-up), water extraction and structural drying, debris removal, and full structural repair including roofing, siding, windows, and interior finishes. We work with your insurance carrier and handle both residential and commercial storm damage throughout the area." },
+      { question: "What storm damage does Forces Water Damage DeBary repair in Orange City?", answer: "Forces Water Damage DeBary handles all phases of storm damage repair and restoration in Orange City: emergency securing (tarping, board-up), water extraction and structural drying, debris removal, and full structural repair including roofing, siding, windows, and interior finishes. We work with your insurance carrier and handle both residential and commercial storm damage throughout the area." },
       { question: "My Orange City roof is leaking after a storm — what should I do?", answer: "Call Forces Water Damage DeBary at (864) 734-5702 immediately. While waiting for our team to arrive, place buckets to collect dripping water and move valuables away from the leak area. Do not go on the roof yourself to assess or tarp — our team handles emergency tarping safely. Stopping water intrusion as quickly as possible limits the extent of interior water and mold damage." },
-      { question: "Does tornado damage require a different restoration approach than hurricane damage?", answer: "Yes. Tornado damage tends to be more concentrated and structural in nature — punching through walls and roofs rather than the broader wind-driven rain intrusion common in tropical storms. Forces Water Damage DeBary assesses the specific pattern of damage and applies the appropriate restoration approach, which may involve more structural demolition and reconstruction for tornado-impacted properties." },
+      { question: "Does hail damage in Orange City need professional repair?", answer: "Yes. Hail can cause significant damage to shingles, gutters, siding, and HVAC equipment that may not be immediately visible from the ground. Unrepaired hail damage leads to roof leaks, water intrusion, and mold growth. Forces Water Damage DeBary assesses hail damage in detail and documents every impact for your insurance claim." },
       { question: "Can Forces Water Damage DeBary repair commercial storm damage in Orange City?", answer: "Yes. Forces Water Damage DeBary handles commercial storm damage restoration throughout Orange City, including retail, office, medical, and multi-tenant properties. Commercial jobs require specialized coordination with building management, tenant communication, and commercial insurance documentation — our team is experienced in all of these aspects of commercial restoration." },
     ],
   },
@@ -209,6 +225,8 @@ const COMBO_CONTENT: Record<ComboKey, ComboContent> = {
     headline: "Fire Damage Restoration in DeBary, FL",
     subheadline:
       "Forces Water Damage DeBary responds immediately to fire damage in DeBary, FL. Smoke and soot cleanup, water extraction, structural restoration — IICRC S700 certified. Available 24/7.",
+    seoTitle: "Fire Damage Restoration in DeBary, FL",
+    seoDescription: "Call (864) 734-5702 — fire damage restoration in DeBary, FL. Smoke & soot cleanup, structural repair. IICRC S700-certified. 24/7 emergency response. Free estimate. Forces Water Damage DeBary.",
     answerFirst:
       "Fire damage restoration in DeBary, FL addresses the full range of destruction that follows a residential or commercial fire — not just the structural damage from flames, but the extensive smoke and soot damage that spreads throughout the structure, the water damage from firefighting efforts, and the persistent odors that embed in porous materials. Forces Water Damage DeBary begins fire restoration in DeBary as soon as the fire department clears the property, following IICRC S700 standards for fire and smoke damage.",
     bodyParagraphs: [
@@ -236,6 +254,8 @@ const COMBO_CONTENT: Record<ComboKey, ComboContent> = {
   /* ============================================================ */
   [key("fire-damage-restoration", "orange-city")]: {
     headline: "Fire Damage Restoration in Orange City, FL",
+    seoTitle: "Fire Damage Restoration in Orange City, FL",
+    seoDescription: "Call (864) 734-5702 — fire damage restoration in Orange City, FL. Smoke, soot & structural cleanup. IICRC S700-certified. 24/7 emergency response. Free estimate. Forces Water Damage DeBary.",
     subheadline:
       "Forces Water Damage DeBary provides 24/7 fire damage restoration in Orange City, FL. Smoke cleanup, soot removal, water extraction, odor elimination, and full structural restoration. IICRC S700 certified.",
     answerFirst:
@@ -282,16 +302,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const comboContent = COMBO_CONTENT[key(serviceSlug, citySlug)];
   if (!comboContent) return {};
 
-  const titleStr = `${service.name} in ${city.name}, FL`;
   const canonical = `${BUSINESS.siteUrl}/services/${service.slug}/${city.slug}`;
 
   return {
-    title: titleStr,
-    description: `Forces Water Damage DeBary provides ${service.name.toLowerCase()} in ${city.name}, FL. IICRC Certified · 24/7 Emergency · Licensed & Insured. Call (864) 734-5702.`,
+    title: comboContent.seoTitle,
+    description: comboContent.seoDescription,
     alternates: { canonical },
     openGraph: {
-      title: `${titleStr} | Forces Water Damage DeBary`,
-      description: `IICRC-certified ${service.name.toLowerCase()} in ${city.name}, FL. Available 24/7. Call (864) 734-5702.`,
+      title: `${comboContent.seoTitle} | Forces Water Damage DeBary`,
+      description: comboContent.seoDescription,
       url: canonical,
     },
   };

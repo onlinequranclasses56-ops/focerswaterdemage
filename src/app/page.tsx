@@ -10,14 +10,14 @@ import { PhoneNumber } from "@/components/ui/PhoneNumber";
 import { BUSINESS, SERVICES, CITIES } from "@/lib/config";
 
 export const metadata: Metadata = {
-  title: "24/7 Emergency Restoration in DeBary & Orange City, FL | Forces Water Damage DeBary",
+  title: "Call (864) 734-5702 — 24/7 Water Damage Restoration DeBary FL | Forces Water Damage DeBary",
   description:
-    "Forces Water Damage DeBary — IICRC-certified water damage, mold remediation, storm damage, and fire damage restoration serving DeBary and Orange City, FL. Available 24/7. Call (864) 734-5702.",
+    "Call (864) 734-5702 — 24/7 emergency water damage, mold, storm & fire restoration in DeBary & Orange City, FL. IICRC-certified. Free estimate. Real person answers every call.",
   alternates: { canonical: BUSINESS.siteUrl },
   openGraph: {
-    title: "Forces Water Damage DeBary | 24/7 Emergency Restoration in DeBary & Orange City, FL",
+    title: "Call (864) 734-5702 | Forces Water Damage DeBary — 24/7 Emergency Restoration",
     description:
-      "IICRC-certified water damage, mold, storm, and fire restoration. Available 24/7. Call (864) 734-5702.",
+      "Call (864) 734-5702 — IICRC-certified water damage, mold, storm & fire restoration. Available 24/7 in DeBary & Orange City, FL. Free estimate.",
     url: BUSINESS.siteUrl,
   },
 };
@@ -53,6 +53,16 @@ const HOME_FAQS = [
     answer:
       "Yes — mold can begin to grow within 24 to 48 hours of water exposure under the right temperature and humidity conditions. Florida's warm climate accelerates this timeline, which is why rapid water extraction and drying is critical. Forces Water Damage DeBary uses industrial drying equipment and moisture meters to verify structures are fully dry before closing out a job.",
   },
+  {
+    question: "Who provides water damage restoration near me in DeBary or Orange City, FL?",
+    answer:
+      "Forces Water Damage DeBary is headquartered in DeBary, FL and serves DeBary, Orange City, and surrounding Volusia County communities. We are already in your area when you call. Dial (864) 734-5702 — a live team member answers 24 hours a day, 7 days a week, and we dispatch immediately.",
+  },
+  {
+    question: "Do you provide storm damage repair in DeBary and Orange City?",
+    answer:
+      "Yes. Forces Water Damage DeBary provides complete storm damage repair and restoration — including wind damage, hail damage, roof repair, water extraction, structural drying, and full reconstruction. We respond 24/7 to storm damage emergencies in DeBary, Orange City, and throughout Volusia County.",
+  },
 ] as const;
 
 export default function HomePage() {
@@ -61,8 +71,8 @@ export default function HomePage() {
       <BreadcrumbSchema items={[{ label: "Home" }]} />
 
       <Hero
-        headline="24/7 Emergency Restoration in DeBary &amp; Orange City, FL"
-        subheadline="Forces Water Damage DeBary responds immediately to water damage, mold, storm damage, and fire damage. IICRC-certified technicians available around the clock."
+        headline="Water Damage Restoration in DeBary &amp; Orange City, FL"
+        subheadline="Forces Water Damage DeBary responds 24/7 to water damage, storm damage, mold, and fire damage emergencies. IICRC-certified technicians — real person answers every call."
         ctaLocation="home-hero"
       />
 

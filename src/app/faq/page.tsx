@@ -7,13 +7,13 @@ import { FAQSchema } from "@/components/schema/FAQSchema";
 import { BUSINESS } from "@/lib/config";
 
 export const metadata: Metadata = {
-  title: "FAQ — Water Damage & Restoration Questions | Forces Water Damage DeBary",
+  title: "FAQ — Water Damage Questions | Call (864) 734-5702 | Forces Water Damage DeBary",
   description:
-    "Common questions about water damage restoration, mold remediation, storm damage, fire damage, and the restoration process — answered by Forces Water Damage DeBary serving DeBary and Orange City, FL.",
+    "Call (864) 734-5702 — Forces Water Damage DeBary answers common questions about water damage, mold, storm & fire restoration. IICRC-certified. 24/7 emergency service in DeBary & Orange City, FL.",
   alternates: { canonical: `${BUSINESS.siteUrl}/faq` },
   openGraph: {
-    title: "Restoration FAQ | Forces Water Damage DeBary — DeBary & Orange City, FL",
-    description: "Answers to common restoration questions. IICRC-certified, 24/7. Call (864) 734-5702.",
+    title: "Restoration FAQ | Call (864) 734-5702 | Forces Water Damage DeBary",
+    description: "Call (864) 734-5702 — answers to common restoration questions. IICRC-certified, 24/7 in DeBary & Orange City, FL.",
     url: `${BUSINESS.siteUrl}/faq`,
   },
 };

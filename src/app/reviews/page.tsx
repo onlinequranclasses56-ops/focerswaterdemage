@@ -8,13 +8,13 @@ import { BUSINESS } from "@/lib/config";
 import type { Review } from "@/types";
 
 export const metadata: Metadata = {
-  title: "Reviews — Forces Water Damage DeBary | DeBary & Orange City, FL",
+  title: "Reviews — Forces Water Damage DeBary | Call (864) 734-5702 | DeBary, FL",
   description:
-    "Read reviews of Forces Water Damage DeBary from DeBary and Orange City, FL customers. IICRC-certified water damage, mold, storm, and fire restoration. Call (864) 734-5702.",
+    "Call (864) 734-5702 — see why DeBary & Orange City, FL homeowners trust Forces Water Damage DeBary. IICRC-certified water damage, mold, storm & fire restoration. 5-star service.",
   alternates: { canonical: `${BUSINESS.siteUrl}/reviews` },
   openGraph: {
-    title: "Customer Reviews | Forces Water Damage DeBary — DeBary & Orange City, FL",
-    description: "Reviews from Volusia County customers. IICRC-certified restoration. Call (864) 734-5702.",
+    title: "Customer Reviews | Call (864) 734-5702 | Forces Water Damage DeBary",
+    description: "Call (864) 734-5702 — IICRC-certified restoration reviews from Volusia County customers. 24/7 emergency service.",
     url: `${BUSINESS.siteUrl}/reviews`,
   },
 };

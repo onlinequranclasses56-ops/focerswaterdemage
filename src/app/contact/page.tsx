@@ -7,13 +7,13 @@ import { BUSINESS } from "@/lib/config";
 import { ContactForm } from "./ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact Forces Water Damage DeBary — DeBary & Orange City, FL",
+  title: "Call (864) 734-5702 — 24/7 Emergency Response | Forces Water Damage DeBary",
   description:
-    "Contact Forces Water Damage DeBary for 24/7 emergency response in DeBary and Orange City, FL. Call (864) 734-5702 or submit a request. IICRC-certified restoration.",
+    "Call (864) 734-5702 now — 24/7 emergency response in DeBary & Orange City, FL. Water damage, mold, storm & fire restoration. IICRC-certified. A real person answers every call.",
   alternates: { canonical: `${BUSINESS.siteUrl}/contact` },
   openGraph: {
-    title: "Contact Forces Water Damage DeBary | DeBary & Orange City, FL",
-    description: "24/7 emergency response. Call (864) 734-5702. Water damage, mold, storm, fire restoration.",
+    title: "Call (864) 734-5702 | Forces Water Damage DeBary — 24/7 Emergency",
+    description: "Call (864) 734-5702 — 24/7 emergency response. Water damage, mold, storm, fire restoration. IICRC-certified. Free estimate.",
     url: `${BUSINESS.siteUrl}/contact`,
   },
 };

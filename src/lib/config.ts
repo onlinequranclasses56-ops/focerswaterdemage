@@ -12,7 +12,7 @@
 export const BUSINESS = {
   name: "Forces Water Damage DeBary",
   legalName: "Forces Water Damage DeBary LLC", /* REPLACE if legal name differs */
-  tagline: "[TAGLINE]",                /* REPLACE: short value-prop tagline */
+  tagline: "DeBary's Fastest Emergency Restoration",
 
   /* Contact */
   phone: "(864) 734-5702",
@@ -72,7 +72,7 @@ export const SERVICES = [
     shortDescription:
       "24/7 emergency water extraction, structural drying, and full restoration for homes and businesses in Volusia County.",
     metaDescription:
-      "Forces Water Damage DeBary provides 24/7 water damage restoration in DeBary and Orange City, FL. IICRC-certified technicians, rapid response. Call (864) 734-5702.",
+      "Call (864) 734-5702 — 24/7 water damage restoration in DeBary & Orange City, FL. IICRC-certified extraction & structural drying. Free estimate. Forces Water Damage DeBary.",
     icon: "💧",
     color: "blue",
   },
@@ -82,7 +82,7 @@ export const SERVICES = [
     shortDescription:
       "Certified mold inspection, containment, safe removal, and prevention by IICRC-trained technicians serving DeBary and Orange City.",
     metaDescription:
-      "Professional mold remediation in DeBary and Orange City, FL. IICRC-certified, safe containment and removal. Forces Water Damage DeBary — call (864) 734-5702.",
+      "Call (864) 734-5702 — IICRC-certified mold remediation in DeBary & Orange City, FL. Safe containment, removal & prevention. Free estimate. Forces Water Damage DeBary.",
     icon: "🔬",
     color: "green",
   },
@@ -92,7 +92,7 @@ export const SERVICES = [
     shortDescription:
       "Rapid storm damage assessment and full restoration after hurricanes, tropical storms, and severe weather across Central Florida.",
     metaDescription:
-      "Storm damage restoration in DeBary and Orange City, FL. Hurricane, flood, and wind damage cleanup by Forces Water Damage DeBary. Call (864) 734-5702.",
+      "Call (864) 734-5702 — storm damage restoration in DeBary & Orange City, FL. Hurricane, flood & wind damage. 24/7 emergency response. Forces Water Damage DeBary.",
     icon: "⛈️",
     color: "slate",
   },
@@ -102,7 +102,7 @@ export const SERVICES = [
     shortDescription:
       "Complete fire, smoke, and soot cleanup with structural restoration and odor elimination throughout Volusia County.",
     metaDescription:
-      "Fire damage restoration in DeBary and Orange City, FL. Smoke, soot, and structural cleanup by Forces Water Damage DeBary. Call (864) 734-5702.",
+      "Call (864) 734-5702 — fire damage restoration in DeBary & Orange City, FL. Smoke, soot & structural cleanup. IICRC-certified. Free estimate. Forces Water Damage DeBary.",
     icon: "🔥",
     color: "orange",
   },
@@ -120,7 +120,7 @@ export const CITIES = [
     description:
       "DeBary is Forces Water Damage DeBary's home base, located along the St. Johns River in Volusia County. Our team provides the fastest emergency response times in DeBary and surrounding communities.",
     metaDescription:
-      "Forces Water Damage DeBary serves DeBary, FL with 24/7 water damage, mold, storm, and fire restoration. IICRC-certified — call (864) 734-5702.",
+      "Call (864) 734-5702 — water damage, mold, storm & fire restoration in DeBary, FL. IICRC-certified. Under 60-min response. Free estimate. Forces Water Damage DeBary.",
     localContext:
       "DeBary's proximity to the St. Johns River creates unique flood and moisture risks, particularly for homes near the river corridor and low-lying neighborhoods.",
   },
@@ -133,7 +133,7 @@ export const CITIES = [
     description:
       "Forces Water Damage DeBary serves Orange City, FL with the same 24/7 emergency response and IICRC-certified technicians available to DeBary customers — typically arriving in under an hour.",
     metaDescription:
-      "Forces Water Damage DeBary serves Orange City, FL with 24/7 water damage, mold, storm, and fire restoration. IICRC-certified — call (864) 734-5702.",
+      "Call (864) 734-5702 — water damage, mold, storm & fire restoration in Orange City, FL. IICRC-certified. 24/7 emergency response. Free estimate. Forces Water Damage DeBary.",
     localContext:
       "Orange City's mix of established neighborhoods, commercial corridors, and proximity to Blue Spring creates a distinct set of water intrusion and storm damage scenarios.",
   },

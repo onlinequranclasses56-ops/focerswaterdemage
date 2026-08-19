@@ -7,13 +7,13 @@ import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
 import { BUSINESS } from "@/lib/config";
 
 export const metadata: Metadata = {
-  title: "Restoration Tips & Resources — Blog | Forces Water Damage DeBary",
+  title: "Restoration Tips & Blog | Call (864) 734-5702 | Forces Water Damage DeBary",
   description:
-    "Restoration tips, storm preparedness guides, mold prevention advice, and more from Forces Water Damage DeBary serving DeBary and Orange City, FL.",
+    "Call (864) 734-5702 — restoration tips, storm prep guides & mold prevention advice from Forces Water Damage DeBary. 24/7 emergency service in DeBary & Orange City, FL.",
   alternates: { canonical: `${BUSINESS.siteUrl}/blog` },
   openGraph: {
-    title: "Blog | Forces Water Damage DeBary — DeBary & Orange City, FL",
-    description: "Restoration tips and resources from Forces Water Damage DeBary.",
+    title: "Blog | Call (864) 734-5702 | Forces Water Damage DeBary",
+    description: "Call (864) 734-5702 — restoration tips from Forces Water Damage DeBary. 24/7 emergency service in DeBary & Orange City, FL.",
     url: `${BUSINESS.siteUrl}/blog`,
   },
 };

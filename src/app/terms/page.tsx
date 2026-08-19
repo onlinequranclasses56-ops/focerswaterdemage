@@ -23,7 +23,7 @@ export default function TermsPage() {
       <header className="bg-surface border-b border-border py-10">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h1 className="text-2xl sm:text-3xl font-bold text-ink">Terms of Service</h1>
-          <p className="text-ink-muted text-sm mt-2">Last updated: [DATE_PLACEHOLDER]</p>
+          <p className="text-ink-muted text-sm mt-2">Last updated: August 2026</p>
         </div>
       </header>
 
@@ -46,7 +46,7 @@ export default function TermsPage() {
           </div>
 
           <p>
-            By using the {BUSINESS.name} website at [DOMAIN].com, you agree to these
+            By using the {BUSINESS.name} website at force1waterdamagefl.com, you agree to these
             terms of service. If you do not agree, do not use this website.
           </p>
 
@@ -59,8 +59,11 @@ export default function TermsPage() {
 
           <h2>Limitation of Liability</h2>
           <p>
-            [TERMS_PLACEHOLDER — Add appropriate limitation of liability language here,
-            reviewed by a Florida-licensed attorney.]
+            To the fullest extent permitted by applicable law, Forces Water Damage DeBary LLC
+            shall not be liable for any indirect, incidental, consequential, or punitive damages
+            arising out of or related to your use of this website. Our total liability for any
+            claim shall not exceed the amount paid by you for the services giving rise to such
+            claim. Nothing on this website constitutes legal, financial, or insurance advice.
           </p>
 
           <h2>Contact</h2>

@@ -207,7 +207,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const service = getService(serviceSlug);
   if (!service) return {};
 
-  const title = `${service.name} in DeBary & Orange City, FL`;
+  const title = `${service.name} in DeBary & Orange City, FL — 24/7 Emergency`;
   const canonical = `${BUSINESS.siteUrl}/services/${service.slug}`;
 
   return {
@@ -292,7 +292,7 @@ export default async function ServicePage({ params }: Props) {
         </div>
       </section>
 
-      {/* Why Force1 for this service */}
+      {/* Why Forces Water Damage DeBary for this service */}
       <section className="py-14 bg-surface border-t border-border" aria-labelledby={`${serviceSlug}-why`}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 id={`${serviceSlug}-why`} className="text-2xl font-bold text-ink mb-6">

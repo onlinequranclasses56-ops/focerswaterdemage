@@ -118,6 +118,22 @@ export function LocalBusinessSchema({ pageUrl: _pageUrl }: Props) {
     priceRange: "$$",
     currenciesAccepted: "USD",
     paymentAccepted: "Cash, Check, Credit Card, Insurance",
+    slogan: "DeBary's Fastest Emergency Restoration",
+    foundingDate: BUSINESS.foundingYear,
+    serviceArea: {
+      "@type": "GeoCircle",
+      geoMidpoint: {
+        "@type": "GeoCoordinates",
+        latitude: BUSINESS.geo.latitude,
+        longitude: BUSINESS.geo.longitude,
+      },
+      geoRadius: "40234",
+    },
+    keywords: "water damage restoration DeBary FL, storm damage repair DeBary, mold remediation DeBary, fire damage restoration Orange City FL, water damage repair Volusia County, 24/7 emergency water damage, IICRC certified restoration DeBary",
+    memberOf: {
+      "@type": "Organization",
+      name: "Institute of Inspection Cleaning and Restoration Certification (IICRC)",
+    },
   };
 
   return (
