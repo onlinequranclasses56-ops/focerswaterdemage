@@ -49,7 +49,7 @@ export const BUSINESS = {
 
   /* Site — set NEXT_PUBLIC_SITE_URL=https://www.force1waterdamagefl.com in Vercel */
   domain: "force1waterdamagefl.com",
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.force1waterdamagefl.com",
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://www.force1waterdamagefl.com",
 
   /* Social / third-party profile URLs */
   social: {
